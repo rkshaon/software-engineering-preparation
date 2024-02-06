@@ -1,7 +1,7 @@
 # SOLID Principles
 
 The SOLID principles are a set of five design principles in object-oriented programming that aim to create more **understandable**, **flexible**, and **maintainable code**.
-SOLID principles were first introduced by *[Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin)* in his 2000 paper ***[Design Principles and Design Patterns](https://staff.cs.utu.fi/~jounsmed/doos_06/material/DesignPrinciplesAndPatterns.pdf)***.
+SOLID principles were first introduced by *[Robert C. Martin](https://en.wikipedia.org/wiki/Robert_C._Martin)* in his 2000 paper ***[Design Principles and Design Patterns](https://github.com/rkshaon/preparation/blob/master/Design_Patterns/DesignPrinciplesAndPatterns.pdf)***.
 
 SOLID principles creates:
 + More understandable and maintainable code
