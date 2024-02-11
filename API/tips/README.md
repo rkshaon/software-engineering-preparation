@@ -46,6 +46,10 @@ This concept is reliable for APIs.
 </table>
 
 Tip #3: **Add versioning**
+- https://example.com/api/v1/carts/123
+- https://example.com/api/v2/carts/123
+
+Versioning allows updating APIs while supporting backward compatibility. This lets developers using the old versions upgrade on their own timeline. This requires well-documented release note.
 
 Tip #4: **Add pagination**
 
