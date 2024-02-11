@@ -12,6 +12,39 @@ Example
 
 Tip #2: **Ensure reliability through idempotent APIs**
 
+An API request is idempotent if sending it multiple times with the same data results in the same outcome as making it just once. Imagine a light switch: flipping it repeatedly doesn't change the state (on or off).
+This concept is reliable for APIs.
+
+<table>
+  <tr>
+    <th colspan="2">Idempotence</th>
+  </tr>
+  <tr>
+    <th>HTTP Method</th>
+    <th>Idempotence</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>PATCH</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>Yes</td>
+  </tr>
+</table>
+
 Tip #3: **Add versioning**
 
 Tip #4: **Add pagination**
