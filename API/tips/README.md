@@ -54,6 +54,10 @@ Versioning allows updating APIs while supporting backward compatibility. This le
 Tip #4: **Add pagination**
 
 Tip #5: **Use clear query string for sorting and filtering API data**
+- GET /users?sort_by=registered
+- GET /products?filter=color:blue
+- GET /products?filter=size:10&sort_by=data_added
+- GET /products?filter=size:10&sort_by=data_added&size:15inches
 
 Tip #6: **Don't make security an afterthought when designing APIs**
 
