@@ -83,6 +83,16 @@ CREATE TABLE Orders (
 ```
 The ***Orders*** table will store data OrderID, ProductID, Quantity and in this table the combination of OrderID and ProductID is a composite primary key and will always unique in the table.
 
+### Auto Incremented Primary Key
+```
+CREATE TABLE Users (
+    UserID INT AUTO_INCREMENT PRIMARY KEY,
+    Username VARCHAR(50),
+    Password VARCHAR(50)
+);
+```
+The ***Users*** table will store data UserID, Username, Password of an User, where UserID will be auto incremented.
+
 ### With Check Constraint
 ```
 CREATE TABLE Students (
@@ -96,3 +106,27 @@ CREATE TABLE Students (
 );
 ```
 The ***Students*** table will hold information with data type specifications, primary key for unique identification, and check constraints to maintain data integrity and enforce specific rules like the value of Age will be between 18 to 60 and the value of Grade will be one of ('A', 'B', 'C', 'D', 'F').
+
+### Date Time Field
+```
+CREATE TABLE Events (
+    EventID INT PRIMARY KEY,
+    EventName VARCHAR(100),
+    EventDate DATE,
+    StartTime TIME,
+    EndTime TIME,
+    EventDateTime TIMESTAMP
+);
+```
+The ***Events*** table will store data of EventID, EventName, EventDate which is a Date type field, StartTime, EndTime where both is Time type field, EventDateTime which is a Timestamp type field.
+
+### Indexing
+```
+CREATE TABLE Products (
+    ProductID INT PRIMARY KEY,
+    ProductName VARCHAR(100),
+    Price DECIMAL(10,2),
+    INDEX idx_price (Price)
+);
+```
+The index on the Price column will help optimize queries involving price-related operations.
