@@ -3,5 +3,6 @@ CREATE TABLE Events (
     EventName VARCHAR(100),
     EventDate DATE,
     StartTime TIME,
-    EndTime TIME
+    EndTime TIME,
+    EventDateTime TIMESTAMP
 );
