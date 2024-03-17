@@ -1,2 +1,3 @@
 .vscode
 Postgres Local.session.sql
+local-test-db.session.sql
