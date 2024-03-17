@@ -86,7 +86,7 @@ The ***Orders*** table will store data OrderID, ProductID, Quantity and in this 
 ### Auto Incremented Primary Key
 ```
 CREATE TABLE Users (
-    UserID INT AUTO_INCREMENT PRIMARY KEY,
+    UserID SERIAL PRIMARY KEY,
     Username VARCHAR(50),
     Password VARCHAR(50)
 );
