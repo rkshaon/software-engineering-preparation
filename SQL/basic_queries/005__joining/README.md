@@ -95,7 +95,7 @@ SELECT student.id, student.name, student.roll, result.gpa
 FROM student
 CROSS JOIN result;
 ```
-Returns all records where each row from the **`Student`** table is combined with each row from the **`Result`** table.
+Returns all records where each row from the **`Student`** table is combined with each row from the **`Result`** table. Returned result will be consiste of `m` x `n` rows where `m` is the number of row in **`Student`**, `n` is the number of row in **`Result`**.
 
 
 To demonastrate `self join`, let's create a table **`Employee`** like below.
