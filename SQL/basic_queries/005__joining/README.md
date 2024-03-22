@@ -10,7 +10,7 @@ There are server types of `join`, they are:
 - Self join
 - Cross join
 
-To demonastrate `join` query, let's create 2 tables **`Student`** and **`Result`** like below.
+To demonastrate `inner join`, `left join`, `right join`, `full join` query, let's create 2 tables **`Student`** and **`Result`** like below.
 
 
 ```
@@ -86,3 +86,29 @@ ON student.id = result.student_id;
 Returns all records when there is a match in either left **``Student``** or right **``Result``** table records.
 
 ![Full Join](./images/img_full_outer_join.png)
+
+
+To demonastrate `self join`, let's create a table **`Employee`** like below.
+
+```
+CREATE TABLE Employee (
+    employee_id SERIAL PRIMARY KEY,
+    employee_name VARCHAR(255),
+    manager_id INT,
+    FOREIGN KEY (manager_id) REFERENCES Employee(employee_id) ON DELETE CASCADE
+);
+```
+**`Employee`** table will holds data of auto incremented primary key `id`, 255 characters maximum limited character varying `employee_name`, self refered foreign key `manager_id` which is on delete cascade.
+
+## Self Join
+Run the query below:
+```
+SELECT 
+    e1.employee_name AS Employee,
+    e2.employee_name AS Manager
+FROM 
+    Employee e1, Employee e2
+WHERE 
+    e1.manager_id = e2.employee_id;
+```
+A self join is a regular join, but the table is joined with itself.
