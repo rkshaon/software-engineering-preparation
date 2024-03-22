@@ -6,8 +6,8 @@
 3. [SOLID principles](https://github.com/rkshaon/preparation/tree/master/SOLID_Principles)
 
 ## SQL Topics
-[PostgreSQL](https://github.com/rkshaon/software-engineering-preparation/tree/master/SQL/PostgreSQL)
-[Basic Queries](https://github.com/rkshaon/software-engineering-preparation/tree/master/SQL/basic_queries)
+- [PostgreSQL](https://github.com/rkshaon/software-engineering-preparation/tree/master/SQL/PostgreSQL)
+- [Basic Queries](https://github.com/rkshaon/software-engineering-preparation/tree/master/SQL/basic_queries)
 
 
 ## Papers
