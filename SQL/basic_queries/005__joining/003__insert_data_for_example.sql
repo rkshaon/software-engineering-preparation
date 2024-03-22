@@ -1,7 +1,8 @@
 INSERT INTO student(name, roll) 
 VALUES  ('Rezaul Karim Shaon', 1530),
         ('Md Rifat Hossain', 1570),
-        ('Nesaruddin Sikder', 1546)
+        ('Nesaruddin Sikder', 1546),
+        ('Hasib Ahmed', 1545);
 
 
 INSERT INTO result(student_id, course_name, gpa)
@@ -10,4 +11,4 @@ VALUES  (1, 'English', 3.35),
         (2, 'English', 3.6),
         (2, 'Begnali', 3.8),
         (3, 'English', 3.9),
-        (3, 'English', 3.75)
+        (3, 'English', 3.75);
