@@ -7,10 +7,11 @@ There are server types of `join`, they are:
 - Left join
 - Right join
 - Full join
-- Self join
 - Cross join
+- Self join
 
-To demonastrate `inner join`, `left join`, `right join`, `full join` query, let's create 2 tables **`Student`** and **`Result`** like below.
+
+To demonastrate `inner join`, `left join`, `right join`, `full join`, `cross join` query, let's create 2 tables **`Student`** and **`Result`** like below.
 
 
 ```
@@ -86,6 +87,15 @@ ON student.id = result.student_id;
 Returns all records when there is a match in either left **``Student``** or right **``Result``** table records.
 
 ![Full Join](./images/img_full_outer_join.png)
+
+## Cross Join
+Run the query below:
+```
+SELECT student.id, student.name, student.roll, result.gpa
+FROM student
+CROSS JOIN result;
+```
+Returns all records where each row from the **`Student`** table is combined with each row from the **`Result`** table.
 
 
 To demonastrate `self join`, let's create a table **`Employee`** like below.
