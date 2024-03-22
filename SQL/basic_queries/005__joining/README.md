@@ -48,6 +48,8 @@ ON student.id = result.student_id;
 ```
 This query will return records that have matching values in both tables means those record are in **`Student`**, **`Result`** table will be returned.
 
+![Inner Join](./images/img_inner_join.png)
+
 ## Left Join
 Run the query below:
 ```
@@ -56,4 +58,19 @@ FROM student
 LEFT JOIN result
 ON student.id = result.student_id;
 ```
-This query will return all records from the **`Student`** table, regardless of whether there are matching records in the **``Result``** table. If there are matching records in the **``Result``** table, the corresponding `gpa` value will be included, if there are no matching record then `NULL` will be set for the `gpa` column.
+Returns all records from the left table **``Student``**, and the matched records from the right table **``Result``**. The result is NULL from the right side if there is no match.
+
+![Left Join](./images/img_left_join.png)
+
+
+# Right Join
+Run the query below:
+```
+SELECT student.id, student.name, student.roll, result.gpa
+FROM student
+RIGHT JOIN result
+ON student.id = result.student_id;
+```
+Returns all records from the right table **``Result``**, and the matched records from the left table **``Student``**. The result is `NULL` from the left side when there is no match.
+
+![Right Join](./images/img_right_join.png)
