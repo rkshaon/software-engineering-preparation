@@ -28,3 +28,21 @@ first_element = fruits[0]
 third_element = fruits[2]
 last_element = fruits[-1]
 ```
+
+## Modify `List`
+- **`Lists`** are mutable.
+- Can be update an indexed value by assigning a new one.
+- Can append new elements using the `append()` method.
+- Can be inserted elements at a specific index using the `insert()` method.
+- Can be remove elements using the `remove()` method (removes the first occurrence) or `pop()` method (removes and returns the element at a specific index or the last element by default).
+
+#### Example
+```
+fruits = ["apple", "banana", "cherry", "mango", "grape"]
+
+fruits[1] = "strawberry"  # Changes the second element
+fruits.append("orange")  # Adds "orange" to the end
+fruits.insert(1, "mango")  # Inserts "mango" at index 1
+fruits.remove("cherry")  # Removes the first occurrence of banana
+removed_item = fruits.pop()  # Removes and stores the last element in removed_item
+```
