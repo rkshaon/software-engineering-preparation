@@ -74,3 +74,15 @@ ON student.id = result.student_id;
 Returns all records from the right table **``Result``**, and the matched records from the left table **``Student``**. The result is `NULL` from the left side when there is no match.
 
 ![Right Join](./images/img_right_join.png)
+
+## Full Join / Full Outer Join
+Run the query below:
+```
+SELECT student.id, student.name, student.roll, result.gpa
+FROM student
+FULL OUTER JOIN result
+ON student.id = result.student_id;
+```
+Returns all records when there is a match in either left **``Student``** or right **``Result``** table records.
+
+![Full Join](./images/img_full_outer_join.png)
