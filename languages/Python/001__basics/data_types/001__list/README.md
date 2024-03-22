@@ -46,3 +46,20 @@ fruits.insert(1, "mango")  # Inserts "mango" at index 1
 fruits.remove("cherry")  # Removes the first occurrence of banana
 removed_item = fruits.pop()  # Removes and stores the last element in removed_item
 ```
+
+## Slicing
+- Can be extracted a portion of a **`List`** using slicing with square brackets and colons.
+- The syntax is `[start:end:step]`.
+- `start` (inclusive) indicates the index where the slice begins.
+- `end` (exclusive) indicates the index where the slice ends (the element at this index won't be included).
+- `step` (optional) specifies the step size for extracting elements. Defaults to 1 (every element).
+
+#### Example
+```
+fruits = ["apple", "banana", "cherry", "mango", "grape"]
+
+using_steps = fruits[0:5:3] # Output ["apple", "mango"]
+first_two_items = fruits[0:2]  # Output ["apple", "banana"]
+except_last_item = fruits[:-1]  # Output ["apple", "banana", "cherry", "mango"]
+every_other_item = fruits[::2] # Output ["apple", "cherry", "grape"]
+```
