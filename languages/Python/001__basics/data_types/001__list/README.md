@@ -10,9 +10,9 @@ Lists are one of the fundamental data structures in Python. They are used to sto
 
 #### Example:
 ```
-my_list1 = [] # empty list
-my_list2 = list() # empty list
-my_list3 = [1, "hello", 3.14, True]  # A list with mixed data types
+my_list1 = []                       # empty list
+my_list2 = list()                   # empty list
+my_list3 = [1, "hello", 3.14, True] # A list with mixed data types
 ```
 
 ## Access `List`
@@ -40,11 +40,11 @@ last_element = fruits[-1]
 ```
 fruits = ["apple", "banana", "cherry", "mango", "grape"]
 
-fruits[1] = "strawberry"  # Changes the second element
-fruits.append("orange")  # Adds "orange" to the end
-fruits.insert(1, "mango")  # Inserts "mango" at index 1
-fruits.remove("cherry")  # Removes the first occurrence of banana
-removed_item = fruits.pop()  # Removes and stores the last element in removed_item
+fruits[1] = "strawberry"    # Changes the second element
+fruits.append("orange")     # Adds "orange" to the end
+fruits.insert(1, "mango")   # Inserts "mango" at index 1
+fruits.remove("cherry")     # Removes the first occurrence of banana
+removed_item = fruits.pop() # Removes and stores the last element in removed_item
 ```
 
 ## Slicing
@@ -58,8 +58,33 @@ removed_item = fruits.pop()  # Removes and stores the last element in removed_it
 ```
 fruits = ["apple", "banana", "cherry", "mango", "grape"]
 
-using_steps = fruits[0:5:3] # Output ["apple", "mango"]
-first_two_items = fruits[0:2]  # Output ["apple", "banana"]
+using_steps = fruits[0:5:3]     # Output ["apple", "mango"]
+first_two_items = fruits[0:2]   # Output ["apple", "banana"]
 except_last_item = fruits[:-1]  # Output ["apple", "banana", "cherry", "mango"]
-every_other_item = fruits[::2] # Output ["apple", "cherry", "grape"]
+every_other_item = fruits[::2]  # Output ["apple", "cherry", "grape"]
+```
+
+## `List` Operations
+- `len()`: Returns the length of the `list`.
+- `count(item)`: Returns the number of of times a specific item appears in the `list`.
+- `index(item)`: Returns the index of the first occurrence of an item in the `list`.
+- `in` operator: Return boolean value if item exist or not.
+- `not in` operator: Return boolean value if if item does not exist.
+- `sort()`: Sorts the list.
+- `reverse()`: Reverses the order of elements in the list.
+
+#### Example
+```
+fruits = ["apple", "banana", "cherry", "mango", "grape", "banana"]
+
+length_of_fruits = len(fruits)              # 6
+banana_appears = fruits.count("banana")     # 2
+grape_index = fruits.index("grape")         # 4
+is_mango_exist = "mango" in fruits          # True
+is_mango_not_exist = "mango" not in fruits  # False
+fruits.sort()                               # ['apple', 'banana', 'banana', 'cherry', 'grape', 'mango']
+fruits.sort(reverse=True)                   # ['mango', 'grape', 'cherry', 'banana', 'banana', 'apple']
+
+fruits = ["apple", "banana", "cherry", "mango", "grape", "banana"]
+fruits.reverse()                            # ['banana', 'grape', 'mango', 'cherry', 'banana', 'apple']
 ```
