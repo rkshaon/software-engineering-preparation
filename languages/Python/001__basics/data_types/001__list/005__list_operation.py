@@ -11,3 +11,4 @@ reverse_sorted_fruits = fruits.sort(reverse=True)
 fruits = ["apple", "banana", "cherry", "mango", "grape", "banana"]
 
 fruits.reverse()
+new_fruits = fruits.copy()

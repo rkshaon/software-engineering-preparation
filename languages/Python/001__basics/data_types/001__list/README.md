@@ -39,7 +39,7 @@ last_element = fruits[-1]
 - Add to list using `+` operator.
 - Repeat lists using `*`.
 - `pop(index)` removes and returns the item at the given index.
-- `clear()` removes all items.
+- `clear()` removes all items. Equivalent to _`del a[:]`_.
 
 #### Example
 ```
@@ -81,6 +81,7 @@ every_other_item = fruits[::2]  # Output ["apple", "cherry", "grape"]
 - `not in` operator: Return boolean value if if item does not exist.
 - `sort()`: Sorts the list.
 - `reverse()`: Reverses the order of elements in the list.
+- `copy()`: Return a shallow copy of the list. Equivalent to _`a[:]`_.
 
 #### Example
 ```
@@ -96,4 +97,5 @@ fruits.sort(reverse=True)                   # ['mango', 'grape', 'cherry', 'bana
 
 fruits = ["apple", "banana", "cherry", "mango", "grape", "banana"]
 fruits.reverse()                            # ['banana', 'grape', 'mango', 'cherry', 'banana', 'apple']
+new_fruits = fruits.copy()
 ```
