@@ -12,3 +12,9 @@ fruits = ["apple", "banana", "cherry", "mango", "grape", "banana"]
 
 fruits.reverse()
 new_fruits = fruits.copy()
+
+# max
+# min
+# sum
+# all
+# any
