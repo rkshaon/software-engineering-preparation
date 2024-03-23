@@ -36,17 +36,24 @@ last_element = fruits[-1]
 - Can be inserted elements at a specific index using the `insert()` method.
 - Can be remove elements using the `remove()` method (removes the first occurrence) or `pop()` method (removes and returns the element at a specific index or the last element by default).
 - `extend(other_list)` adds all elements of another list.
+- Add to list using `+` operator.
+- Repeat lists using `*`.
+- `pop(index)` removes and returns the item at the given index.
+- `clear()` removes all items.
 
 #### Example
 ```
 fruits = ["apple", "banana", "cherry", "mango", "grape"]
 
-fruits[1] = "strawberry"    # Changes the second element
-fruits.append("orange")     # Adds "orange" to the end
-fruits.insert(1, "mango")   # Inserts "mango" at index 1
-fruits.remove("cherry")     # Removes the first occurrence of banana
-removed_item = fruits.pop() # Removes and stores the last element in removed_item
-fruits.extend(["avacado", "blueberry", "peach"]) # Add all elements of another list
+fruits[1] = "strawberry"                            # Changes the second element
+fruits.append("orange")                             # Adds "orange" to the end
+fruits.insert(1, "mango")                           # Inserts "mango" at index 1
+fruits.remove("cherry")                             # Removes the first occurrence of banana
+removed_item = fruits.pop()                         # Removes and stores the last element in removed_item
+fruits.extend(["avacado", "blueberry", "peach"])    # Add all elements of another list
+new_fruits = fruits + ["Pineapple", "Papaya"]       # Concatenate
+new_fruits2 = fruits * 2                            # Repeats
+
 ```
 
 ## Slicing
