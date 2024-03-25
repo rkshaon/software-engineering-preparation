@@ -82,6 +82,10 @@ every_other_item = fruits[::2]  # Output ["apple", "cherry", "grape"]
 - `sort()`: Sorts the list.
 - `reverse()`: Reverses the order of elements in the list.
 - `copy()`: Return a shallow copy of the list. Equivalent to _`a[:]`_.
+- `max(list)`: Returns the largest item in a list.
+- `min(list)`: Returns the smallest item in a list.
+- `all(list)`: Returns True if all elements in the list are true (or if the list is empty).
+- `any(list)`: Returns True if any element in the list is true. If the list is empty, returns False.
 
 #### Example
 ```
@@ -98,4 +102,21 @@ fruits.sort(reverse=True)                   # ['mango', 'grape', 'cherry', 'bana
 fruits = ["apple", "banana", "cherry", "mango", "grape", "banana"]
 fruits.reverse()                            # ['banana', 'grape', 'mango', 'cherry', 'banana', 'apple']
 new_fruits = fruits.copy()
+
+numbers = [20, 21, 39, 13, 62]
+max_number = max(numbers)       # 62
+max_fruits = max(fruits)        # mango
+min_number = min(numbers)       # 13
+min_fruits = min(fruits)        # apple
+
+new_list = [True, False]
+print(all(new_list))            # False
+print(any(new_list))            # True
+new_list = []                   
+print(all(new_list))            # True
+print(any(new_list))            # False
+new_list = [True, True, True]
+print(all(new_list))            # True
+new_list = [False, False, False]
+print(any(new_list))            # False
 ```

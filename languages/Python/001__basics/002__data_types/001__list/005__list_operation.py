@@ -13,8 +13,19 @@ fruits = ["apple", "banana", "cherry", "mango", "grape", "banana"]
 fruits.reverse()
 new_fruits = fruits.copy()
 
-# max
-# min
-# sum
-# all
-# any
+numbers = [20, 21, 39, 13, 62]
+max_number = max(numbers)       # 62
+max_fruits = max(fruits)        # mango
+min_number = min(numbers)       # 13
+min_fruits = min(fruits)        # apple
+
+new_list = [True, False]
+print(all(new_list))            # False
+print(any(new_list))            # True
+new_list = []                   
+print(all(new_list))            # True
+print(any(new_list))            # False
+new_list = [True, True, True]
+print(all(new_list))            # True
+new_list = [False, False, False]
+print(any(new_list))            # False
