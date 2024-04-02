@@ -22,3 +22,8 @@ starts the PostgreSQL service.
 sudo systemctl enable postgresql.service
 ```
 enables PostgreSQL to start at boot.
+
+## psql shell
+```
+sudo -u postgres psql
+```
