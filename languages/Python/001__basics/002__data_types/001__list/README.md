@@ -2,6 +2,17 @@
 <!-- https://realpython.com/python-list/ -->
 Lists are one of the fundamental data structures in Python. They are used to store collections of items and are ordered and changeable, meaning you can modify the list after it's created.
 
+## Characteristics of `Tuple` objects
+- `Ordered`: They contain elements that are sequentially arranged according to their specific insertion order.
+- `Zero-based`: Zero based index for access elements.
+- `Mutable`: They support in-place mutations or changes to their contained elements. They support growing or shrinking operations.
+- `Heterogeneous`: They can store objects of different types.
+- `Nestable`: They can contain other lists, so you can have lists of lists.
+- `Iterable`: They support iteration, so traverse them using a loop or comprehension while performing operations on each of their elements.
+- `Sliceable`: They support slicing operations.
+- `Combinable`: They support concatenation operations.
+- `Copyable`: They allows make copies of their content using various techniques.
+
 ## Define `List`
 
 - **`List`** can be created using square brackets `[]` or keyword `list()`.
