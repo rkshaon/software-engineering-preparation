@@ -13,7 +13,7 @@ Lists are one of the fundamental data structures in Python. They are used to sto
 - `Combinable`: They support concatenation operations.
 - `Copyable`: They allows make copies of their content using various techniques.
 
-## Define `List`
+## Constructing `List`
 
 - **`List`** can be created using square brackets `[]` or keyword `list()`.
 - **`List`** can contain items of any data type (strings, integers, floats, booleans, or even other lists), including mixed types.
