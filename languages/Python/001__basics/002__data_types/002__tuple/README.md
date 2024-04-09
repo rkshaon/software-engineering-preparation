@@ -71,4 +71,36 @@ But there is a few other ways do do so.
 
 - Using `+` operations, but this will create a new `tuple`.
 - Repeating tuples using the `*` operator, but this will creates a new `tuple`.
-- And last, convert the `tuple` into `list` and perform all the list modification operations and convert back to `tuple`.
+- And last, convert the `tuple` into `list` and perform all the list modification operations and convert back to `tuple`
+.
+
+
+## Slicing `Tuple`
+- Slicing creates a new `tuple` containing elements from the original `tuple`.
+- The start parameter specifies the index from which to start the slice (inclusive).
+- The stop parameter specifies the index at which to end the slice (exclusive).
+- The step parameter specifies the increment between elements to include in the slice.
+- Omitting any of these parameters defaults to using the beginning, end, and a step of 1, respectively.
+- Negative indices can also be used to slice from the end of the `tuple`.
+- Slicing operations do not modify the original `tuple`; they create a new `tuple` with the selected elements.
+
+### Example
+```
+fruits = ("apple", "banana", "cherry", "mango", "grape")
+
+# Basic slicing: [start:stop:step]
+# Extract elements from index 1 to index 3 (not including index 4)
+subset = fruits[1:4]            # ('banana', 'cherry', 'mango')
+
+# Omitting start parameters
+subset_start = fruits[2:]       # Extract elements starting from index 2 to the end
+
+# Omitting stop parameters
+subset_stop = fruits[:3]        # Extract elements from the beginning up to index 2 (not including index 3)
+
+# Negative indexing
+subset_negative = fruits[-3:-1] # Extract elements from the third-last to the second-last
+
+# Step parameter
+every_other = fruits[::2]   # Extract every other element
+```
