@@ -20,6 +20,7 @@ A `tuple` is a built-in data type that allows to create immutable sequences of v
 - `Tuple` elements separated by commas.
 - `Tuple` have to be construct at once, because after constructing `Tuple` value can not be added.
 
+### Example
 ```
 my_tuple1 = ()                                  # empty tuple
 my_tuple2 = tuple()                             # empty tuple
@@ -36,6 +37,8 @@ Without trailing comma Python iterprets it as `Integer` not `Tuple`, becaure the
 - `Tuple` elements accessed by their index within square brackets.
 - `List`s are indexed starting from 0. The first element has index 0, the second element has index 1, and so on.
 - Negative indexing starts from -1 for the last item.
+
+### Example
 ```
 fruits = (
     "apple", 
@@ -61,3 +64,11 @@ if "apple" in fruits:
     print("`apple` available in the fruits tuple.")
 ```
 
+## Modify `Tuple`
+As earlier mentioned `Tuple` is immutable, which means neither item can be removed, updated or added in a `Tuple`, so any `Tuple` can not be modfied.
+
+But there is a few other ways do do so.
+
+- Using `+` operations, but this will create a new `tuple`.
+- Repeating tuples using the `*` operator, but this will creates a new `tuple`.
+- And last, convert the `tuple` into `list` and perform all the list modification operations and convert back to `tuple`.
