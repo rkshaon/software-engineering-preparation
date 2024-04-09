@@ -1,4 +1,3 @@
-# Define a tuple
 fruits = ("apple", "banana", "cherry", "mango", "grape")
 
 # Basic slicing: [start:stop:step]

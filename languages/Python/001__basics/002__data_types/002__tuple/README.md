@@ -104,3 +104,17 @@ subset_negative = fruits[-3:-1] # Extract elements from the third-last to the se
 # Step parameter
 every_other = fruits[::2]   # Extract every other element
 ```
+
+## `Tuple` operations
+- `len(tuple)` - returns the length of the `Tuple`.
+- `max(tuple)` - returns the largest item from the `Tuple`.
+- `min(tuple)` - returns the smallest item from the `Tuple`.
+
+### Example
+```
+fruits = ("apple", "banana", "cherry", "mango", "grape")
+
+fruits_length = len(fruits)     # 5
+max_item = max(fruits)          # mango
+min_item = min(fruits)          # apple
+```

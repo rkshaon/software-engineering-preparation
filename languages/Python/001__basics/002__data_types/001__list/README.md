@@ -85,12 +85,12 @@ every_other_item = fruits[::2]  # Output ["apple", "cherry", "grape"]
 ```
 
 ## `List` Operations
-- `len()`: Returns the length of the `list`.
+- `len(list)`: Returns the length of the `list`.
 - `count(item)`: Returns the number of of times a specific item appears in the `list`.
 - `index(item)`: Returns the index of the first occurrence of an item in the `list`.
 - `in` operator: Return boolean value if item exist or not.
 - `not in` operator: Return boolean value if if item does not exist.
-- `sort()`: Sorts the list.
+- `sort(list)`: Sorts the list.
 - `reverse()`: Reverses the order of elements in the list.
 - `copy()`: Return a shallow copy of the list. Equivalent to _`a[:]`_.
 - `max(list)`: Returns the largest item in a list.
