@@ -122,9 +122,17 @@ min_item = min(fruits)          # apple
 ## Unpacking `Tuple`
 - Packing is creating a new `tuple`.
 - Unpacking is extracting values from a `tuple`.
+- For unpacking, the number of variables must match the number of values of the `tuple`.
+- Operator (*) helps to unpack `tuple` while number of variable could be less than number of values in `tuple`. And the variable which will hold multiple value from the `tuple` will be `list`.
 
 ### Example
 ```
-points = (10, 5, 20)        # packing
-x, y, z = points            # unpacking
+points = (10, 5, 20, 99, 32)        # packing
+a, b, c, d, e = points              # unpacking
+
+*a, b, c = points                   # a: [10, 5, 20], b: 99, c: 32, a is list type
+
+a, *b, c = points                   # a: 10, b: [5, 20, 99], c: 32
+
+a, b, *c = points                   # a: 10, b: 5, c: [20, 99, 32]
 ```
