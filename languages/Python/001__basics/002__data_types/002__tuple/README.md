@@ -105,10 +105,12 @@ subset_negative = fruits[-3:-1] # Extract elements from the third-last to the se
 every_other = fruits[::2]   # Extract every other element
 ```
 
-## `Tuple` operations
-- `len(tuple)` - returns the length of the `Tuple`.
-- `max(tuple)` - returns the largest item from the `Tuple`.
-- `min(tuple)` - returns the smallest item from the `Tuple`.
+## `Tuple` Operations
+- `len(tuple)`: returns the length of the `Tuple`.
+- `max(tuple)`: returns the largest item from the `Tuple`.
+- `min(tuple)`: returns the smallest item from the `Tuple`.
+- `sorted(tuple)`: creates a new `list` which is will be sorted.
+- `reverse(tuple)`: reverses the order of elements in the tuple.
 
 ### Example
 ```
@@ -117,6 +119,14 @@ fruits = ("apple", "banana", "cherry", "mango", "grape")
 fruits_length = len(fruits)     # 5
 max_item = max(fruits)          # mango
 min_item = min(fruits)          # apple
+
+numbers = (99, 33, 66, 44)
+sorted_numbers = sorted(numbers)            # [33, 44, 66, 99]
+sorted_numbers = tuple(sorted_numbers)      # (33, 44, 66, 99)
+
+numbers = (99, 33, 66, 44)
+reversed_numbers = tuple(reversed(numbers)) # (44, 66, 33, 99)
+
 ```
 
 ## Unpacking `Tuple`
