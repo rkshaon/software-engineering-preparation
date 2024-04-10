@@ -118,3 +118,13 @@ fruits_length = len(fruits)     # 5
 max_item = max(fruits)          # mango
 min_item = min(fruits)          # apple
 ```
+
+## Unpacking `Tuple`
+- Packing is creating a new `tuple`.
+- Unpacking is extracting values from a `tuple`.
+
+### Example
+```
+points = (10, 5, 20)        # packing
+x, y, z = points            # unpacking
+```
