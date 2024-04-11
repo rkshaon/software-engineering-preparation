@@ -116,9 +116,9 @@ every_other = fruits[::2]   # Extract every other element
 ```
 fruits = ("apple", "banana", "cherry", "mango", "grape")
 
-fruits_length = len(fruits)     # 5
-max_item = max(fruits)          # mango
-min_item = min(fruits)          # apple
+fruits_length = len(fruits)                 # 5
+max_item = max(fruits)                      # mango
+min_item = min(fruits)                      # apple
 
 numbers = (99, 33, 66, 44)
 sorted_numbers = sorted(numbers)            # [33, 44, 66, 99]
