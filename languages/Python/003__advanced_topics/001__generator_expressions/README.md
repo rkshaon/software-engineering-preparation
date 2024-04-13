@@ -1,0 +1,42 @@
+# Generator Expressions in Python
+
+## What is generator expressions?
+- Generator expressions are a concise way to create iterators in Python.
+- They look similar to list comprehensions, but instead of creating a list that holds all the elements at once, they generate elements on demand.
+
+## Syntax
+```
+generator_expression = (expression for item in iterable if condition)
+```
+- `expression`: This defines what value will be produced for each item in the iterable.
+- `item in iterable`: This iterates over the elements in the sequence (like a list, tuple, or string).
+- `if condition (optional)`: This allows you to filter elements based on a condition.
+
+### Example
+```
+numbers = range(1, 11)
+multiply_numbers = (n*10 for n in numbers)
+
+for n in multiply_numbers:
+    print(n)    # Output: 10 20 30 40 50 60 70 80 90 100
+```
+- The expression `n * 10` calculates the multiplied value of each item (`n`) in the list `numbers` sequence.
+- No condition applied.
+- The entire expression creates an iterator (`multiply_numbers`) that generates numbers on demand when used in a loop.
+```
+numbers = range(1, 11)
+squares = (x * x for x in numbers if x % 2 == 0)
+
+for num in squares:
+  print(num)  # Output: 4 16 36 64 100
+```
+- The expression `x * x` calculates the square of each item (x) in the list `numbers` sequence.
+- The if `x % 2 == 0` condition filters for even numbers only.
+- The entire expression creates an iterator (`squares`) that generates the `squares` of even numbers on demand when used in a loop.
+
+## Benefits
+- `Memory Efficiency`: Generator expressions are memory-efficient because they don't store all elements at once like lists. This is particularly useful for large datasets.
+- `Readability`: They can improve code readability by providing a concise way to create iterators within expressions.
+- `Performance`: For certain operations, they can be more performant than traditional loops due to the on-demand generation.
+- Generator expressions can be used for various tasks like filtering, transforming, or creating infinite sequences.
+- You can use them with different iterables like strings or custom iterators.

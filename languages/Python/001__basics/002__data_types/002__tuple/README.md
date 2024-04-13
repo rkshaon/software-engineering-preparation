@@ -146,3 +146,5 @@ a, *b, c = points                   # a: 10, b: [5, 20, 99], c: 32
 
 a, b, *c = points                   # a: 10, b: 5, c: [20, 99, 32]
 ```
+
+## Traversing `Tuple`
