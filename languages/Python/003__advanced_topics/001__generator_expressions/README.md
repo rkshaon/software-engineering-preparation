@@ -42,7 +42,7 @@ for num in squares:
 - You can use them with different iterables like strings or custom iterators.
 
 ## Test
-#### Write a generator expression to create a list of all uppercase letters in a string.
+#### 1. Write a generator expression to create a list of all uppercase letters in a string.
 ```
 text = """
 In the 16th century, an age of great marine and terrestrial exploration, 
@@ -59,6 +59,13 @@ for r in result:
     print(r)
 ```
 
-#### Generate an iterator that produces the Fibonacci sequence up to a certain number.
+#### 2. Generate an iterator that produces the Fibonacci sequence up to a certain number.
 
-#### Filter a list of numbers and keep only those divisible by 3.
+#### 3. Filter a list of numbers and keep only those divisible by 3.
+```
+numbers = range(1, 101)
+results = (n for n in numbers if n%3==0)
+
+for r in results:
+    print(r)
+```
