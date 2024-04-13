@@ -3,6 +3,8 @@
 ## What is generator expressions?
 - Generator expressions are a concise way to create iterators in Python.
 - They look similar to list comprehensions, but instead of creating a list that holds all the elements at once, they generate elements on demand.
+- A generator expression is an expression that returns a generator object.
+- It is similar to a list comprehension but creates a generator instead of a list.
 
 ## Syntax
 ```
