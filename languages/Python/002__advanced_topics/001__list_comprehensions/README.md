@@ -108,3 +108,12 @@ my_list = ["hi", 4, 8.99, 'apple', ('t,b', 'n')]
 indexed_values = [(index, value) for index, value in enumerate(my_list)]
 print(indexed_values)
 ```
+
+#### 6. Find the common numbers between 2 lists (without using a tuple or set).
+```
+list_a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+list_b = [2, 7, 1, 12]
+
+common_numbers = [num_a for num_a in list_a if num_a in list_b]
+print(common_numbers)
+```
