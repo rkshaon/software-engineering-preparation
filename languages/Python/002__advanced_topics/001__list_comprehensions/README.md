@@ -58,3 +58,73 @@ print(squared_odd_numbers)  # Output: [1, 9, 25]
 - Short, sweet, and expressive code (one look, understand!).
 
 ## Test
+#### 1. Find all numbers from 1 to 1000 that are divisible by 7 using list comprehensions.
+```
+divisible_by_7 = [num for num in range(1, 1001) if num % 7 == 0]
+print(divisible_by_7)
+```
+
+#### 2. Identify all numbers from 1 to 1000 that contain the digit 3 using list comprehensions.
+```
+numbers_with_3 = [num for num in range(1, 1001) if '3' in str(num)]
+print(numbers_with_3)
+```
+
+#### 3. Given a string, count the number of spaces it contains using list comprehensions.
+```
+text = """
+In the 16th century, an age of great marine and terrestrial exploration, 
+Ferdinand Magellan led the first expedition to sail around the world. As 
+a young Portuguese noble, he served the king of Portugal, but he became 
+involved in the quagmire of political intrigue at court and lost the king’s 
+favor. After he was dismissed from service by the king of Portugal, he 
+offered to serve the future Emperor Charles V of Spain.
+"""
+
+space_count = sum([1 for char in text if char == ' '])
+print(space_count)
+```
+
+#### 4. Create a list of all consonants (non-vowels) from a string.
+```
+text = """
+In the 16th century, an age of great marine and terrestrial exploration, 
+Ferdinand Magellan led the first expedition to sail around the world. As 
+a young Portuguese noble, he served the king of Portugal, but he became 
+involved in the quagmire of political intrigue at court and lost the king’s 
+favor. After he was dismissed from service by the king of Portugal, he 
+offered to serve the future Emperor Charles V of Spain.
+"""
+
+consonants = [char for char in text if char.isalpha() and char.lower()
+              not in 'aeiou']
+print(consonants)
+```
+
+#### 5. From a list, generate tuples containing the index and value for each item.
+```
+my_list = ["hi", 4, 8.99, 'apple', ('t,b', 'n')]
+
+indexed_values = [(index, value) for index, value in enumerate(my_list)]
+print(indexed_values)
+```
+
+#### 6. Find the common numbers between 2 lists (without using a tuple or set).
+```
+list_a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+list_b = [2, 7, 1, 12]
+
+common_numbers = [num_a for num_a in list_a if num_a in list_b]
+print(common_numbers)
+```
+
+#### 7. Extract all numbers from a sentence.
+```
+import re
+
+sentence = "In 1984, there were 13 instances of a protest with over 1000 people attending."
+
+numbers = re.findall(r'\d+', sentence)
+numbers = [int(num) for num in numbers]
+print(numbers)
+```
