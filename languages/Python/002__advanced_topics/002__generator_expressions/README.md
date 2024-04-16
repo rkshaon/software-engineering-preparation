@@ -12,9 +12,10 @@ generator_expression = (expression for item in iterable if condition)
 ```
 - `expression`: This defines what value will be produced for each item in the iterable.
 - `item in iterable`: This iterates over the elements in the sequence (like a list, tuple, or string).
-- `if condition (optional)`: This allows you to filter elements based on a condition.
+- `if condition (optional)`: This allows to filter elements based on a condition.
 
 ### Example
+without condition
 ```
 numbers = range(1, 11)
 multiply_numbers = (n*10 for n in numbers)
@@ -25,6 +26,8 @@ for n in multiply_numbers:
 - The expression `n * 10` calculates the multiplied value of each item (`n`) in the list `numbers` sequence.
 - No condition applied.
 - The entire expression creates an iterator (`multiply_numbers`) that generates numbers on demand when used in a loop.
+
+with condition
 ```
 numbers = range(1, 11)
 squares = (x * x for x in numbers if x % 2 == 0)
@@ -32,7 +35,7 @@ squares = (x * x for x in numbers if x % 2 == 0)
 for num in squares:
   print(num)  # Output: 4 16 36 64 100
 ```
-- The expression `x * x` calculates the square of each item (x) in the list `numbers` sequence.
+- The expression `x * x` calculates the square of each item (`x`) in the list `numbers` sequence.
 - The if `x % 2 == 0` condition filters for even numbers only.
 - The entire expression creates an iterator (`squares`) that generates the `squares` of even numbers on demand when used in a loop.
 
