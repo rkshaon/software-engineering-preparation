@@ -58,3 +58,10 @@ print(squared_odd_numbers)  # Output: [1, 9, 25]
 - Short, sweet, and expressive code (one look, understand!).
 
 ## Test
+#### 1. Find all numbers from 1 to 1000 that are divisible by 7 using list comprehensions.
+```
+divisible_by_7 = [num for num in range(1, 1001) if num % 7 == 0]
+print(divisible_by_7)
+```
+
+#### 2. Identify all numbers from 1 to 1000 that contain the digit 3 using list comprehensions.
