@@ -4,7 +4,7 @@
 - [Language](./languages/)
     - [Python](./languages/Python/)
         - [Basic](./languages/Python/001__basics/)
-        - [Advanced](./languages/Python/002__advanced/)
+        - [Advanced](./languages/Python/002__advanced_topics/)
         - [Tricks](./languages/Python/003__tricks/)
         - [Tips](./languages/Python/004__tips/)
 - [API Development](https://github.com/rkshaon/preparation/tree/master/API)
