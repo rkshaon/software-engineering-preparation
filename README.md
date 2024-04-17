@@ -22,7 +22,7 @@
 # Contributing
 Contributions are always welcomed. Feel free to raise new issues, file new PRs. Consider giving it a star and fork this repo!
 
-To follow the guidelines, refer to [Contributing.md](./Contributing.md)
+To follow the guidelines, refer to [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 # License
 [MIT License](./LICENSE)
