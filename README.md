@@ -18,3 +18,11 @@
 
 ## Papers
 + [Design Principles and Design Patterns by Robert C Martin](https://github.com/rkshaon/preparation/blob/master/Design_Patterns/DesignPrinciplesAndPatterns.pdf)
+
+# Contributing
+Contributions are always welcomed. Feel free to raise new issues, file new PRs. Consider giving it a star and fork this repo!
+
+To follow the guidelines, refer to [Contributing.md](./Contributing.md)
+
+# License
+[MIT License](./LICENSE)
