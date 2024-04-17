@@ -11,3 +11,5 @@
     - [Generator Expressions](./002__advanced_topics/002__generator_expressions/)
 - [Python Tricks](./003__tricks/)
 - [Python Tips](./004__tips/)
+    - [Use raise instead of pass in function](./004__tips/001__use_raise_instead_of_pass_in_function/)
+    - [Specify function argument and return type](./004__tips/002__specify_function_argument_and_return_type/)
