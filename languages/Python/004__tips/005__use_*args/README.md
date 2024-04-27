@@ -29,4 +29,3 @@ def main() -> None:
 - Compability
 - Conciseness
 - Variable length arguments
-- 
