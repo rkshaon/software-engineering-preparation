@@ -35,7 +35,7 @@ We welcome new topics related to software engineering, programming, and related 
 - Address any feedback or suggestions provided during the review.
 - Once approved, your contribution will be merged into the main branch.
 
-### 7. Thank You!
+## Thank You!
 Your contributions help make **software-engineering-preparation** a valuable resource for aspiring software engineers. We appreciate your time and effort!
 
 Feel free to enhance these guidelines or add any additional sections that align with your project’s goals. Happy contributing! 😊🚀
