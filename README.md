@@ -13,8 +13,9 @@
     - [Basic SQL](./Database/basic_queries/)
     - [PostgreSQL](./Database/PostgreSQL/)
     - [Redis](./Database/Redis/)
-- [API Development](https://github.com/rkshaon/preparation/tree/master/API)
-- [API Development Tips](https://github.com/rkshaon/preparation/tree/master/API/tips)
+- [Git](./git/)
+- [API Development](./API/)
+    - [API Development Tips](./API/tips/)
 - [SOLID principles](https://github.com/rkshaon/preparation/tree/master/SOLID_Principles)
 
 ## Papers
