@@ -37,8 +37,9 @@ or
 postgres -V
 ```
 
-
 ## psql shell
 ```
 sudo -u postgres psql
 ```
+
+[For references](https://docs.fedoraproject.org/en-US/quick-docs/postgresql/)
