@@ -1,5 +1,10 @@
 # Git
 
+## Update remote respository URL
+```
+git remote set-url <remote-name> <git-new-url>
+```
+**Note:** replace `<remote-name>` by the original repository name, and `<git-new-url>` by remote repository URL.
 
 ## Removing remote repository
 ```
