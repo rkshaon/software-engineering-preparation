@@ -1,3 +1,3 @@
-# Redis
+# PostgreSQL
 
 - [Install](./install/)
