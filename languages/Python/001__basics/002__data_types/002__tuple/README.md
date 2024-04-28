@@ -148,3 +148,10 @@ a, b, *c = points                   # a: 10, b: 5, c: [20, 99, 32]
 ```
 
 ## Traversing `Tuple`
+- Loop
+- Unpacking tuple
+- List comprehensions
+- Generator expressions
+
+### Example
+[See all the examples of traversing `Tuple`](007__traversing_tuple.py)

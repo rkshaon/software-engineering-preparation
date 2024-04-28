@@ -27,8 +27,19 @@ sudo systemctl start postgresql
 ```
 starts the PostgreSQL service.
 
+## Check version
+Excute the command below to get the PostgreSQL version
+```
+postgres --version
+```
+or
+```
+postgres -V
+```
 
 ## psql shell
 ```
 sudo -u postgres psql
 ```
+
+[For references](https://docs.fedoraproject.org/en-US/quick-docs/postgresql/)
