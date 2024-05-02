@@ -29,3 +29,9 @@ days = (
 )
 reversed_days = days[::-1]
 print(reversed_days) # ('Sunday', 'Saturday', 'Friday', 'Thursday', 'Wednesday', 'Tuesday', 'Monday')
+
+# count
+print(fruits.count("apple")) # 1
+
+# index
+print(fruits.index("mango")) # 1
