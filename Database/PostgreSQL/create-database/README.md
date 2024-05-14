@@ -5,6 +5,11 @@
 sudo -u postgres psql
 ```
 
+## Exit from `psql` terminal
+```
+\q
+```
+
 ## See `User` list
 ```
 \u
