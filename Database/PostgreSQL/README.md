@@ -1,4 +1,4 @@
 # PostgreSQL
 
 - [Install](./install/)
-- [Create Database](./create-database/)
+- [Create Database & related everything](./create-database/)
