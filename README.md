@@ -1,5 +1,8 @@
 # Preparation
 
+## Guideline
+To see complete study guideline, click [here](GUIDELINE.md)
+
 ## Topics
 - [Language](./languages/)
     - [Python](./languages/Python/)
