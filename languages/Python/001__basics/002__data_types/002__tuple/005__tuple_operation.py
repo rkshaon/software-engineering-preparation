@@ -16,3 +16,22 @@ sorted_numbers = tuple(sorted_numbers)      # (33, 44, 66, 99)
 numbers = (99, 33, 66, 44)
 reversed_numbers = tuple(reversed(numbers)) # (44, 66, 33, 99)
 print(reversed_numbers)
+
+# Reversing tuple using slicing operator
+days = (
+    "Monday", 
+    "Tuesday", 
+    "Wednesday", 
+    "Thursday", 
+    "Friday", 
+    "Saturday", 
+    "Sunday",
+)
+reversed_days = days[::-1]
+print(reversed_days) # ('Sunday', 'Saturday', 'Friday', 'Thursday', 'Wednesday', 'Tuesday', 'Monday')
+
+# count
+print(fruits.count("apple")) # 1
+
+# index
+print(fruits.index("mango")) # 1

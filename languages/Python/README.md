@@ -1,1 +1,16 @@
 # Python
+
+- [Python Basics](./001__basics/)
+    - [Syntax](./001__basics/001__syntax/)
+    - [Data Types](./001__basics/002__data_types/)
+    - [Control Flow](./001__basics/003__control_flow/)
+    - [Functions](./001__basics/004__functions/)
+    - [Object Oriented Programing](./001__basics/005__OOP/)
+- [Advanced Topics](./002__advanced_topics/)
+    - [List Comprehensions](./002__advanced_topics//001__list_comprehensions/)
+    - [Generator Expressions](./002__advanced_topics/002__generator_expressions/)
+- [Python Tricks](./003__tricks/)
+- [Python Tips](./004__tips/)
+    - [Use raise instead of pass in function](./004__tips/001__use_raise_instead_of_pass_in_function/)
+    - [Specify function argument and return type](./004__tips/002__specify_function_argument_and_return_type/)
+    - [Use docstring](./004__tips/003__use_doctstring/)

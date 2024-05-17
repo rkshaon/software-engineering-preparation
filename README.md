@@ -9,12 +9,22 @@
             - [Generator expressions](./languages/Python//002__advanced_topics/002__generator_expressions/)
         - [Tricks](./languages/Python/003__tricks/)
         - [Tips](./languages/Python/004__tips/)
-- [SQL](./SQL/)
-    - [Basic SQL](./SQL/basic_queries/)
-    - [PostgreSQL](./SQL/PostgreSQL/)
-- [API Development](https://github.com/rkshaon/preparation/tree/master/API)
-- [API Development Tips](https://github.com/rkshaon/preparation/tree/master/API/tips)
+- [Database](./Database/)
+    - [Basic SQL](./Database/basic_queries/)
+    - [PostgreSQL](./Database/PostgreSQL/)
+    - [Redis](./Database/Redis/)
+- [Git](./git/)
+- [API Development](./API/)
+    - [API Development Tips](./API/tips/)
 - [SOLID principles](https://github.com/rkshaon/preparation/tree/master/SOLID_Principles)
 
 ## Papers
 + [Design Principles and Design Patterns by Robert C Martin](https://github.com/rkshaon/preparation/blob/master/Design_Patterns/DesignPrinciplesAndPatterns.pdf)
+
+# Contributing
+Contributions are always welcomed. Feel free to raise new issues, file new PRs. Consider giving it a star and fork this repo!
+
+To follow the guidelines, refer to [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+# License
+[MIT License](./LICENSE)

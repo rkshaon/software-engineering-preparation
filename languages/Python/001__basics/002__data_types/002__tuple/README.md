@@ -111,6 +111,8 @@ every_other = fruits[::2]   # Extract every other element
 - `min(tuple)`: returns the smallest item from the `Tuple`.
 - `sorted(tuple)`: creates a new `list` which is will be sorted.
 - `reverse(tuple)`: reverses the order of elements in the tuple.
+- `index()`: returns the index of the first occurrence of a specified value within the tuple.
+- `count()`: returns the number of times a specified value appears in the tuple.
 
 ### Example
 ```
@@ -126,6 +128,8 @@ sorted_numbers = tuple(sorted_numbers)      # (33, 44, 66, 99)
 
 numbers = (99, 33, 66, 44)
 reversed_numbers = tuple(reversed(numbers)) # (44, 66, 33, 99)
+print(fruits.count("apple"))                # 1
+print(fruits.index("mango"))                # 1
 
 ```
 
@@ -148,3 +152,13 @@ a, b, *c = points                   # a: 10, b: 5, c: [20, 99, 32]
 ```
 
 ## Traversing `Tuple`
+- Loop
+- Unpacking tuple
+- List comprehensions
+- Generator expressions
+
+### Example
+[See all the examples of traversing `Tuple`](007__traversing_tuple.py)
+
+## Named `Tuple`
+Coming soon.
