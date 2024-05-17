@@ -12,7 +12,7 @@ sudo -u postgres psql
 
 ## See `User` list
 ```
-\u
+\du
 ```
 Note: This command will return list of the users.
 
