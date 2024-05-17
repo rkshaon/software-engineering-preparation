@@ -3,6 +3,7 @@
 ## Topics
 - [Language](./languages/)
     - [Python](./languages/Python/)
+        - [Environment](./languages/Python/000_environment/)
         - [Basic](./languages/Python/001__basics/)
         - [Advanced](./languages/Python/002__advanced_topics/)
             - [List comprehensions](./languages/Python/002__advanced_topics/001__list_comprehensions/)
