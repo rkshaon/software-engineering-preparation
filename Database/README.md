@@ -1,5 +1,7 @@
 # Database
 
 - [Basic Queries](./basic_queries/)
-- [PostgreSQL](./PostgreSQL/)
-- [Redis](./Redis/)
+- [SQL](./SQL/)
+    - [PostgreSQL](./SQL/PostgreSQL/)
+- [NoSQL](./NoSQL/)
+    - [Redis](./NoSQL/Redis/)
