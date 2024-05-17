@@ -1,5 +1,6 @@
 # Python
 
+- [Environment](./000_environment/)
 - [Python Basics](./001__basics/)
     - [Syntax](./001__basics/001__syntax/)
     - [Data Types](./001__basics/002__data_types/)
