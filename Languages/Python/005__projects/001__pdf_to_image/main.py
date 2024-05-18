@@ -13,7 +13,7 @@ for _ in range(4):
     previous_directory = os.path.dirname(previous_directory)
 roadmap_path = os.path.join(previous_directory, 'Roadmap/resources')
 
-file_name = "system-design.pdf"
+file_name = "software-architect.pdf"
 file_directory = os.path.join(roadmap_path, file_name)
 
 # Convert each page of the PDF to an image
