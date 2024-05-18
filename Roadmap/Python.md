@@ -1,6 +1,7 @@
 # Python Roadmap
 
 ## Python Developer Roadmap
-![Backend Roadmap](./resources/backend.jpg)
+![Python Roadmap](./resources/backend.jpg)
 
 ### [Reference](https://roadmap.sh/python)
+### [File](./resources/python.pdf)
