@@ -1,0 +1,6 @@
+def test():
+    pass
+
+
+
+test()
