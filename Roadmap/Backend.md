@@ -2,5 +2,5 @@
 
 ![Backend Roadmap](./resources/backend.jpg)
 
-### [Reference](https://roadmap.sh/Backend)
-### [File](./resources/Backend.pdf)
+### [Reference](https://roadmap.sh/backend)
+### [File](./resources/backend.pdf)
