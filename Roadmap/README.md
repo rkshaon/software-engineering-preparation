@@ -1,5 +1,8 @@
 # Roadmap
 
+- [DevOps](DevOps.md)
+- [Python](./Python.md)
+
 ## Backend Engineer Roadmap
 ![Backend Roadmap](./resources/backend.jpg)
 
