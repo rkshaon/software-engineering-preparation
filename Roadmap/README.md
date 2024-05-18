@@ -1,4 +1,6 @@
 # Roadmap
 
 ## Backend Engineer Roadmap
-<embed src="./resources/backend.pdf" type="application/pdf">
+![Backend Roadmap](./resources/backend.jpg)
+
+### [Reference](https://roadmap.sh/backend)
