@@ -24,6 +24,8 @@ To see complete study guideline, click [here](GUIDELINE.md)
 - [API Development](./API/)
     - [API Development Tips](./API/tips/)
 - [SOLID principles](https://github.com/rkshaon/preparation/tree/master/SOLID_Principles)
+- [Tools](./Tools/)
+    - [zsh](./Tools/zsh/)
 
 ## Papers
 + [Design Principles and Design Patterns by Robert C Martin](https://github.com/rkshaon/preparation/blob/master/Design_Patterns/DesignPrinciplesAndPatterns.pdf)
