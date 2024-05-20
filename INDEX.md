@@ -25,7 +25,7 @@
     - [API Development Tips](./API/tips/)
 - [Design Patterns](./DesignPatterns/)
 - [Software Engineering Principles](./SoftwareEngineeringPrinciples/)
-    - [SOLID principles](./SoftwareEngineeringPrinciples/SOLID-Principles/)
+    - [SOLID](./SoftwareEngineeringPrinciples/SOLID/)
     - [KISS](./SoftwareEngineeringPrinciples/KISS/)
     - [DRY](./SoftwareEngineeringPrinciples/DRY/)
     - [YAGNI](./SoftwareEngineeringPrinciples/YAGNI/)
