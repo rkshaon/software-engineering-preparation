@@ -24,8 +24,9 @@ $ redis-cli ping
 ```
 if the output is below
 ```
-pong
+PONG
 ```
 Then it's fine.
 
-[For references](https://developer.fedoraproject.org/tech/database/redis/about.html)
+### [References]
+- [Fedora Project](https://developer.fedoraproject.org/tech/database/redis/about.html)
