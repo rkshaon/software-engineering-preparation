@@ -1,8 +1,10 @@
 # Preparation
 This repository will help to prepare to be a software engineer.
 
+<!-- 
 ## Guideline
-To see complete study guideline, click [here](./GUIDELINE.md)
+To see complete study guideline, click [here](./GUIDELINE.md) 
+-->
 
 ## Roadmap
 Here is roadmap to be a software engineer. To see complete roadmap, click [here](./Roadmap/)
