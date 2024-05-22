@@ -20,6 +20,7 @@
 - [API Development](./API/)
     - [Components](./API/components/)
         - [WSGI and ASGI](./API/components/wsgi-and-asgi/)
+    - [Caching](./API/Caching/)
     - [Web Framework](./API/WebFramework/)
         - [Django](./API/WebFramework/Django/)
     - [API Development Tips](./API/tips/)

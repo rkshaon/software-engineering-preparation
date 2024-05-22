@@ -3,10 +3,10 @@
 - [API components](./components/)
     - [WSGI and ASGI](./components/wsgi-and-asgi/)
     <!-- - [HTTP](./components/http/) -->
-- [API Development Tips](./tips/)
+- [Caching](./Caching/)
 - [Web Framework](./WebFramework/)
     - [Django](./WebFramework/Django/)
-
+- [API Development Tips](./tips/)
 <!-- - [API endpoints](./endpoints/)
 - [API requests](./requests/)
 - [API responses](./responses/)
