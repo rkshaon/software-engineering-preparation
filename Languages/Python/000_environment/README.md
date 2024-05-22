@@ -35,6 +35,6 @@ source my_virtual_env_name/bin/activate
 `Python` command may not found on some **OS**, there if `Python` is installed then used `Python3` instead of `Python`.
 ---
 
-### Study materisl
+### Study material
 - [Python Docs](https://python.readthedocs.io/en/stable/library/venv.html)
 - [RealPython](https://realpython.com/python-virtual-environments-a-primer/)
