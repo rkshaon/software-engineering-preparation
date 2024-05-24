@@ -2,7 +2,7 @@
 
 - [API components](./components/)
     - [WSGI and ASGI](./components/wsgi-and-asgi/)
-    <!-- - [HTTP](./components/http/) -->
+    - [HTTP](./components/http/README.md)
 - [Caching](./Caching/)
 - [Web Framework](./WebFramework/)
     - [Django](./WebFramework/Django/)
