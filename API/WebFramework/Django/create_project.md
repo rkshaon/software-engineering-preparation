@@ -1,3 +1,5 @@
-# Create Django Project
+# Create Django Project and App
 
-After installing Django 
+## Create Project
+Let's assume you have installed Django in your virtual environment.
+

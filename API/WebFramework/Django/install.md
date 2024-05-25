@@ -27,3 +27,6 @@ python -m django --version
 ```
 py -m django --version
 ```
+
+#### References
+- [Django Doc](https://docs.djangoproject.com/en/5.0/topics/install/)
