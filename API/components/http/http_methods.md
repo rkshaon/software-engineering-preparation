@@ -15,3 +15,4 @@ HTTP defines a set of **request methods** to indicate the desired action to be p
 #### Resources
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
 - [HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110)
+- [HTTP Methods written by Lokesh Gupta](https://restfulapi.net/http-methods/)
