@@ -1,6 +1,6 @@
 # nginx
 
-## NGINX Overview
+## nginx Overview
 - NGINX (pronounced “engine-x”) is an open-source web server known for its speed, flexibility, and reliability.
 - It was created in 2004 by Igor Sysoev to address the C10K problem (simultaneously managing 10,000 client connections).
 - NGINX efficiently handles large numbers of simultaneous connections with low memory usage.
@@ -28,6 +28,7 @@
 - It can terminate or initiate SSL/TLS connections, offloading processing from application servers.
 
 ## Installation Steps (on Ubuntu)
+
 ### Install NGINX
 Run the following command to install NGINX.
 ```
