@@ -22,5 +22,5 @@ Git is a distributed version control system (VCS) that allows developers to trac
 In summary, Git’s snapshot-based approach, local operations, and powerful branching capabilities make it a versatile and widely adopted version control system
 
 #### References
-- [What is Git @git-scm.com](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
+- [What is Git @g it-scm.com](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
 - [w3schools.com](https://www.w3schools.com/git/default.asp)
