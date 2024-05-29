@@ -8,6 +8,7 @@
     - [Functions](./basics/functions/README.md)
     - [Object Oriented Programing](./basics/OOP/README.md)
 - [Advanced Topics](./advanced_topics/)
+    - [Lambda Function](./advanced_topics/lambda_function/README.md)
     - [List Comprehensions](./advanced_topics/list_comprehensions/README.md)
     - [Generator Expressions](./advanced_topics/generator_expressions/README.md)
 - [Debugging](./debugging/README.md)
