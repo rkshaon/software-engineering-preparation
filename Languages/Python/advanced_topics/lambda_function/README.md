@@ -44,3 +44,6 @@ print(summarize(5, 6, 2))  # Output: 13
 
 #### 2. Use lambda function to capitalize every character of a text
 [Solution](./test__002.py)
+
+#### 3. From a list filter just even numbers using lambda function
+[Solution](./test__003.py)
