@@ -39,5 +39,8 @@ print(summarize(5, 6, 2))  # Output: 13
 - `Overuse`: Don't overuse lambda functions for the sake of brevity, as it can make code harder to understand. Use them judiciously when they genuinely enhance readability.
 
 ## Test
-#### Use lambda function to verify if 2 variables summation is equal to target
+#### 1. Use lambda function to verify if 2 variables summation is equal to target
 [Solution](./test__001.py)
+
+#### 2. Use lambda function to capitalize every character of a text
+[Solution](./test__002.py)
