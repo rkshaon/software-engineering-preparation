@@ -1,6 +1,7 @@
 # Preparation
 This repository will help to prepare to be a software engineer.
 
+***The best way to learn a new topic is to force yourself to teach it to others.***
 <!-- 
 ## Guideline
 To see complete study guideline, click [here](./GUIDELINE.md) 
