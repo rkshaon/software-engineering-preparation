@@ -1,4 +1,7 @@
 # Preparation
+![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/rkshaon/software-engineering-preparation)
+
+
 This repository will help to prepare to be a software engineer.
 
 ***The best way to learn a new topic is to force yourself to teach it to others.***
