@@ -46,7 +46,18 @@ After this execute the command below on terminal.
 ```
 p10k configure
 ```
-And if this does not open the configuration option then restart the terminal.
+And if this does not open the configuration option then restart the shell.
+
+To restart the shell execute the command if you `bash`
+```
+exec bash
+```
+
+To restart the shell execute the command if you `zsh`
+```
+exec zsh
+```
+
 
 ## Step 5 (Optional): Install `zsh-syntax-highlighting` plugin
 Execute the command below
