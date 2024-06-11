@@ -53,3 +53,21 @@ sudo systemctl status nginx
 - Configure NGINX to serve multiple websites (server blocks)
     - Create configuration files in `/etc/nginx/sites-available/`.
     - Enable the desired server blocks using symbolic links in `/etc/nginx/sites-enabled/`.
+
+## Uninstall `nginx` (on Ubuntu)
+To uninstall execute the command below:
+```
+sudo apt remove nginx
+```
+
+To removes all but config files execute the command below:
+```
+sudo apt-get remove nginx nginx-common
+```
+To removes everything execute the command below:
+```
+sudo apt-get purge nginx nginx-common
+```
+
+#### References
+- [askubuntu.com](https://askubuntu.com/questions/235347/what-is-the-best-way-to-uninstall-nginx)
