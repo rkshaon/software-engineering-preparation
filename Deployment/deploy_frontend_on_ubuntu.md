@@ -4,6 +4,7 @@
 - [nginx](nginx.md)
 - node
 - [Git](../git/README.md)
+- CertBot (for SSL certification)
 
 ## Prepare Ubuntu Server
 Update the package list
@@ -52,9 +53,9 @@ sudo git pull origin branch_name
 Consider you have build version of your `Node.js` application.
 
 ## `nginx` configuration for Node.js application
-Serve you application at HTTP
+### Serve at HTTP
 
-### default
+#### default
 Open the `default` file.
 
 Using `nano`
@@ -84,3 +85,61 @@ server {
 }
 ```
 Here, considered `Node.js` application's build is deploying.
+
+### domain_name.com
+
+There will be no file under `domain_name.com`.
+
+Execute the command below.
+```
+sudo vi /etc/nginx/sites-available/domain_name.com
+```
+This will automatically create the configuration file if file does not exist, if file exist then it will open the file.
+
+Replace the contents with below.
+```
+server {
+    listen 80;
+    server_name domain_name.com;
+    root /var/www/app_name/dist;
+    index index.html index.htm;
+
+    access_log /var/log/nginx/domain_name.com.log;
+    error_log /var/log/nginx/domain_name.com.error.log;
+
+    keepalive_timeout 60;
+
+    proxy_buffers 16 64k;
+    proxy_buffer_size 128k;
+
+    location / {
+        include /etc/nginx/mime.types;
+        try_files $uri $uri/ /index.html?/$request_uri;
+    }
+}
+```
+Here, considered `Node.js` application's build is deploying.
+
+### Server as HTTPS
+You need cert bot.
+
+Install certbot from snap
+```
+sudo snap install --classic certbot
+```
+
+After installing `certbot` you need to generate SSL certificate.
+
+#### default
+Execute the command below.
+```
+sudo certbot --nginx
+```
+
+#### domain_name.com
+Execute the command below.
+
+```
+sudo certbot --nginx -d domain_name.com
+```
+This will generate SSL certification and update `nginx` configuration file according to certification.
