@@ -36,6 +36,11 @@ sudo apt-get update
 sudo apt-get install nginx
 ```
 
+or
+```
+sudo apt-get install -y nginx
+```
+
 ### Adjust Firewall Rules
 If you have a firewall enabled, allow HTTP and HTTPS traffic.
 ```
