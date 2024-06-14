@@ -10,7 +10,7 @@ HTTP defines a set of **request methods** to indicate the desired action to be p
 - [**CONNECT**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/CONNECT): The `CONNECT` method establishes a tunnel to the server identified by the target resource.
 - [**OPTIONS**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/OPTIONS): The `OPTIONS` method describes the communication options for the target resource.
 - [**TRACE**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/TRACE): The `TRACE` method performs a message loop-back test along the path to the target resource.
-[**PATCH**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH): The `PATCH` method applies partial modifications to a resource.
+- [**PATCH**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH): The `PATCH` method applies partial modifications to a resource.
 
 #### Resources
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)
