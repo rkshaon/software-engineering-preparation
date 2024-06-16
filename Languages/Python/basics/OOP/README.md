@@ -24,6 +24,8 @@ The bundling of data (attributes) and methods (functions) that operate on the da
 ## Abstraction
 Hiding the complexity reality while exposing only the necessary parts, it helps in reducing programming complexity and effort.
 
+[Details with example](./abstraction.md)
+
 ## Inheritance
 The mechanism by which one class (child class) inherits attributes and methods from another class (parent class).
 
