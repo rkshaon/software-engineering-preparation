@@ -29,6 +29,9 @@ Hiding the complexity reality while exposing only the necessary parts, it helps 
 ## Inheritance
 The mechanism by which one class (child class) inherits attributes and methods from another class (parent class).
 
+[Details with example](./inheritance.md)
+
 ## Polymorphism
 The ability to present the same interface for differen data types. It allows methods to do different things based on the object it is acting upon.
 
+[Details with example](./polymorphism.md)
