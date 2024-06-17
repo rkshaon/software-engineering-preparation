@@ -62,5 +62,32 @@ import example_singleton as singleton
 print(singleton.shared_variable)
 ```
 
+Now run the both scripts in same Python session. Example to do so.
+```
+# singleton_main.py
+import sample_module1
+import sample_module2
+```
+
+Now run the command below.
+```
+python3 singleton_main.py
+```
+
+#### Output
+```
+Shared Variable
+Shared Variable(modified by samplemodule1)
+```
+
+The first line is from `sample_module1.py`, and the second line is from `sample_module2.py` after modifying the variable `shared_variable` in `sample_module1.py`.
+
+Here, the value changed by **sample_module1** is also reflected in **sample_module2**.
+
+### Classic Singleton
+Classic Singleton creates an instance only if there is no instance created so far; otherwise, it will return the instance that is already created.
+
+
+
 #### References
 - [GeekforGeeks](https://www.geeksforgeeks.org/singleton-pattern-in-python-a-complete-guide/)
