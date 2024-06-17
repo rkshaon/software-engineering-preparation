@@ -40,7 +40,7 @@ A singleton pattern can be implemented in three different ways. They are as foll
 ### Module Level Singelaton
 All modules are singleton, by definition.
 
-Let’s create a simple module-level singleton where the data is shared among other modules. Here we will create three python files – [example_singleton.py](example_singleton.py), [sample_module1.py](./sample_module1.py), and [sample_module2.py](./sample_module2.py) – in which the other sample modules share a variable from singleton.py. 
+Let’s create a simple module-level singleton where the data is shared among other modules. Here we will create three python files – [example_module_singleton.py](./example_module_singleton.py), [sample_module1.py](./sample_module1.py), and [sample_module2.py](./sample_module2.py) – in which the other sample modules share a variable from singleton.py. 
 
 ```
 # singleton.py
@@ -87,7 +87,56 @@ Here, the value changed by **sample_module1** is also reflected in **sample_modu
 ### Classic Singleton
 Classic Singleton creates an instance only if there is no instance created so far; otherwise, it will return the instance that is already created.
 
+```
+class SingletonClass(object):
+  def __new__(cls):
+    if not hasattr(cls, 'instance'):
+      cls.instance = super(SingletonClass, cls).__new__(cls)
+    
+    return cls.instance
 
+
+singleton = SingletonClass()
+new_singleton = SingletonClass()
+
+print(singleton is new_singleton)
+
+singleton.singl_variable = "Singleton Variable"
+print(new_singleton.singl_variable)
+```
+#### Output
+```
+True
+Singleton Variable
+```
+Here, in the `__new__` method, we will check whether an instance is created or not. If created, it will return the instance; otherwise, it will create a new instance. You can notice that singleton and new_singleton return the same instance and have the same variable.
+
+Now, subclass a singleton class.
+```
+class SingletonClass(object):
+  def __new__(cls):
+    if not hasattr(cls, 'instance'):
+      cls.instance = super(SingletonClass, cls).__new__(cls)
+
+    return cls.instance
+   
+class SingletonChild(SingletonClass):
+    pass
+   
+singleton = SingletonClass()  
+child = SingletonChild()
+print(child is singleton)
+ 
+singleton.singl_variable = "Singleton Variable"
+print(child.singl_variable)
+```
+
+#### Output
+```
+True
+Singleton Variable
+```
+`SingletonChild` has the same instance of `SingletonClass` and also shares the same state. But there are scenarios, where we need a different instance, but should share the same state. This state sharing can be achieved using `Borg Singleton`.
 
 #### References
 - [GeekforGeeks](https://www.geeksforgeeks.org/singleton-pattern-in-python-a-complete-guide/)
