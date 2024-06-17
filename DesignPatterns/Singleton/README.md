@@ -138,5 +138,66 @@ Singleton Variable
 ```
 `SingletonChild` has the same instance of `SingletonClass` and also shares the same state. But there are scenarios, where we need a different instance, but should share the same state. This state sharing can be achieved using `Borg Singleton`.
 
+### Borg Singleton
+Borg singleton is a design pattern in Python that allows state sharing for different instances.
+
+```
+class BorgSingleton(object):
+  _shared_borg_state = {}
+   
+  def __new__(cls, *args, **kwargs):
+    obj = super(BorgSingleton, cls).__new__(cls, *args, **kwargs)
+    obj.__dict__ = cls._shared_borg_state
+    return obj
+   
+borg = BorgSingleton()
+borg.shared_variable = "Shared Variable"
+ 
+class ChildBorg(BorgSingleton):
+  pass
+ 
+childBorg = ChildBorg()
+print(childBorg is borg)
+print(childBorg.shared_variable)
+```
+
+#### Output
+```
+False
+Shared Variable
+```
+
+The new instance creation process, a shared state is also defined in the `__new__` method. Here the shared state is retained using the shared_borg_state attribute and it is stored in the `__dict__` dictionary of each instance.
+
+To achieve a different state, then reset the  `shared_borg_state` attribute.
+
+```
+class BorgSingleton(object):
+  _shared_borg_state = {}
+   
+  def __new__(cls, *args, **kwargs):
+    obj = super(BorgSingleton, cls).__new__(cls, *args, **kwargs)
+    obj.__dict__ = cls._shared_borg_state
+    return obj
+   
+borg = BorgSingleton()
+borg.shared_variable = "Shared Variable"
+ 
+class NewChildBorg(BorgSingleton):
+    _shared_borg_state = {}
+ 
+newChildBorg = NewChildBorg()
+print(newChildBorg.shared_variable)
+```
+
+Here the shared state is reseted and while try to access the shared_variable an error will occure.
+
+```
+Traceback (most recent call last):
+  File "/home/329d68500c5916767fbaf351710ebb13.py", line 16, in <module>
+    print(newChildBorg.shared_variable)
+AttributeError: 'NewChildBorg' object has no attribute 'shared_variable'
+```
+
 #### References
 - [GeekforGeeks](https://www.geeksforgeeks.org/singleton-pattern-in-python-a-complete-guide/)
