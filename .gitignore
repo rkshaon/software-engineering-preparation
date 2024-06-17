@@ -2,3 +2,4 @@
 /env
 Postgres Local.session.sql
 local-test-db.session.sql
+DesignPatterns/Singleton/__pycache__
