@@ -1,6 +1,11 @@
 # Design Patterns
 Design patterns are proven solutions to common problems in software design. They are typically used at the code level to solve specific issues related to object-oriented design and interaction.
 
+## Scope
+- Focus on solving common problems related to software design and object-oriented programming.
+- Operate at a lower level of abstraction, often dealing with individual components or classes.
+
+## Design Patterns
 - Creational Patterns
     - Abstract Factory
     - Builder
