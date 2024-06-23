@@ -4,6 +4,9 @@ Design patterns are proven solutions to common problems in software design. They
 ## Scope
 - Focus on solving common problems related to software design and object-oriented programming.
 - Operate at a lower level of abstraction, often dealing with individual components or classes.
+- Design patterns are more about the smaller-scale aspects of code design.
+- Design patterns are often used within the context of a single module or component.
+- Design patterns aim to solve specific issues in code design and object interactions.
 
 ## Design Patterns
 - Creational Patterns
@@ -11,7 +14,7 @@ Design patterns are proven solutions to common problems in software design. They
     - Builder
     - Factory Method
     - Prototype
-    - [Singelaton]
+    - [Singelaton](./CreationalPatterns/Singleton/README.md)
 - Structural Patterns
     - Adapter (or Wrapper)
     - Bridge
