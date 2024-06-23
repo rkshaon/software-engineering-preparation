@@ -1,4 +1,4 @@
-# __init__(self, ...)
+# `__init__(self, ...)`
 Initializes a new instance of the class.
 
 The `__init__()` method is a special method, also known as a constructor, that is automatically invoked when a new instance of a class is created. It is used to initialize the object's attributes and set up any necessary state.

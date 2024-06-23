@@ -8,5 +8,5 @@ class Person:
 
 
 # Creating an instance of Person
-person1 = Person("Alice", 30)
-person1.greet()  # Output: Hello, my name is Alice and I am 30 years old.
+person1 = Person("Rezaul", 27)
+person1.greet()  # Output: Hello, my name is Rezaul and I am 27 years old.
