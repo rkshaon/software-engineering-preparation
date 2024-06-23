@@ -3,3 +3,4 @@ Dunder (double underscore) methods, also known as magic methods, are special met
 
 - [`__init__()`](./__init__/README.md)
 - [`__str__()`](./__str__/README.md)
+- [`__repr__()`](./__repr__/README.md)
