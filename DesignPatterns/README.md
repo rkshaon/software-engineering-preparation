@@ -1,3 +1,34 @@
 # Design Patterns
+Design patterns are proven solutions to common problems in software design. They are typically used at the code level to solve specific issues related to object-oriented design and interaction.
 
-- [Singelaton]
+- Creational Patterns
+    - Abstract Factory
+    - Builder
+    - Factory Method
+    - Prototype
+    - [Singelaton]
+- Structural Patterns
+    - Adapter (or Wrapper)
+    - Bridge
+    - Composite
+    - Decorator
+    - Facade
+    - Flyweight
+    - Proxy
+- Behavioral Patterns
+    - Chain of Responsibility
+    - Command
+    - Interpreter
+    - Iterator
+    - Mediator
+    - Memento
+    - Observer
+    - State
+    - Strategy
+    - Template Method
+    - Visitor
+- Other Notable Patterns
+    - Null Object
+    - Repository
+    - Unit of Work
+    - MVC (Model-View-Controller)
