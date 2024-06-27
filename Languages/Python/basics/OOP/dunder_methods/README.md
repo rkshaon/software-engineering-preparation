@@ -1,0 +1,34 @@
+# Dunder / Magic Methods
+Dunder (double underscore) methods, also known as magic methods, are special methods that Python classes can implement to emulate the behavior of built-in types and operations. These methods allow you to define how objects of your class behave with respect to various operations, such as arithmetic, comparison, and built-in functions.
+
+- Initialization and Representation:
+    - [`__init__()`](./__init__/README.md)
+    - [`__str__()`](./__str__/README.md)
+    - [`__repr__()`](./__repr__/README.md)
+- Comparison Operators
+    - `__ne__()`
+    - `__lt__()`
+    - `__le__()`
+    - `__gt__()`
+    - `__ge__()`
+- Arithmetic Operators
+    - `__add__()`
+    - `__sub__()`
+    - `__mul__()`
+    - `__truediv__()`
+    - `__floordiv__()`
+    - `__mod__()`
+    - `__pow__()`
+- Container Emulation
+    - `__len__()`
+    - `__getitem__()`
+    - `__setitem__()`
+    - `__delitem__()`
+    - `__contains__()`
+- Attribute Access
+    - `__getattr__()`
+    - `__setattr__()`
+    - `__delattr__()`
+- Context Management
+    - `__enter__()`
+    - `__exit__()`
