@@ -18,6 +18,7 @@
     - [NoSQL](./Database/NoSQL/)
         - [Redis](./Database/NoSQL/Redis/)
 - [Git](./git/)
+- [Concepts and Comparisons](./ConceptsAndComparisons/README.md)
 - [API Development](./API/)
     - [Components](./API/components/)
         - [WSGI and ASGI](./API/components/wsgi-and-asgi/)
