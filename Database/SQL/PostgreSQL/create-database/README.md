@@ -36,9 +36,14 @@ Note: Replace `db-name` with your project database name and `username` with your
 
 ## Grant previleges on database
 ```
-GRANT ALL PRIVILEGES ON DATABASE db-name TO username;
+GRANT ALL PRIVILEGES ON DATABASE db_name TO username;
 ```
-Note: Replace `db-name` with your project database name and `username` with your database user.
+Note: Replace `db_name` with your project database name and `username` with your database user.
+
+## Give ownership to a database user
+```
+ALTER DATABASE db_name OWNER TO username;
+```
 
 ## Connect to database
 ```
