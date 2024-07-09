@@ -56,6 +56,7 @@ The load will also be equally distributed across all servers, since the load bal
 
 ## Comparison
 ![](./Resources/StatefullVSStateLess.png)
+
 **Diagram**: _Statefull vs Stateless_
 
 #### References
