@@ -66,11 +66,14 @@ npm install -g yarn
 ## CLI Commands
 | Task | npm Command | Yarn Command |
 | ---- | ---- | ---- |
-| Install packages | `npm install` | `yarn install` |
-| Add a package | `npm install < package >` | `yarn add < package >` |
+| Install packages | `npm install` | `yarn` or `yarn install` |
+| Add a package | `npm install < package >` or `npm install < package_name@version_number >` | `yarn add < package >` or `yarn add < package_name@version_number >` |
 | Remove a package | `npm uninstall < package >` | `yarn remove < package >` |
 | Update packages | `npm update` | `yarn upgrade` |
 | Install globally | `npm install -g < package >` | `yarn global add < package >` |
+| Install dev package | `npm install < package_name > –save-dev` | `yarn add < package_name > –dev` |
+| Update dev package	| `npm update < package_name >` or `npm update < package_name@version_number >` | `yarn upgrade < package_name >` or `yarn upgrade < package_name@version_number >` |
+| View package | `npm view < package_name >` | `yarn info < package_name >` |
 
 ## Community and Ecosystem
 ### npm
