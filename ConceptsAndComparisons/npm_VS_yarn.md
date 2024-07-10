@@ -64,6 +64,7 @@ npm install -g yarn
 - Automatically verifies packages before installation.
 
 ## CLI Commands
+### Different Commands
 | Task | npm Command | Yarn Command |
 | ---- | ---- | ---- |
 | Install packages | `npm install` | `yarn` or `yarn install` |
@@ -74,6 +75,18 @@ npm install -g yarn
 | Install dev package | `npm install < package_name > –save-dev` | `yarn add < package_name > –dev` |
 | Update dev package	| `npm update < package_name >` or `npm update < package_name@version_number >` | `yarn upgrade < package_name >` or `yarn upgrade < package_name@version_number >` |
 | View package | `npm view < package_name >` | `yarn info < package_name >` |
+
+### Same Commands
+| Task | npm | Yarn |
+| ---- | ---- | ---- |
+| Initialization | `npm init` | `yarn init` |
+| Running Scripts | `npm run [script]` | `yarn run [script]` |
+| Listing Dependencies | `npm list` | `yarn list` |
+| Testing | `npm test` | `yarn test` |
+| Linking Packages | `npm link` | `yarn link` |
+| Authentication | `npm login` | `yarn login` |
+| Authentication | `npm logout` | `yarn logout` |
+| Publishing Packages | `npm publish` | `yarn publish` |
 
 ## Community and Ecosystem
 ### npm
@@ -87,3 +100,7 @@ npm install -g yarn
 ## Conclusion
 - `Choose npm` if you prefer a default, well-integrated package manager with `Node.js` and are comfortable with its ecosystem.
 - `Choose Yarn` if you need faster installs, deterministic dependency management, better offline capabilities, and enhanced security.
+
+#### References
+- [GeeksForGeeks.org](https://www.geeksforgeeks.org/difference-between-npm-and-yarn/)
+- ChatGPT
