@@ -43,7 +43,7 @@ To start redis on boot. -->
 
 ## Test Redis
 ```
-$ redis-cli ping
+redis-cli ping
 ```
 To test redis-cli if the output is below
 ```
