@@ -19,6 +19,13 @@ Open on any text editor you want to edit the `redis.conf`, I am here using `nano
 
 Then inside the file, find the supervised directive.
 Change it to systemd (since Ubuntu uses systemd as the init system)
+
+Before
+```
+supervised no
+```
+
+After
 ```
 supervised systemd
 ```
