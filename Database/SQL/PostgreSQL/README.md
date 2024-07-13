@@ -1,6 +1,7 @@
 # PostgreSQL
 
 - [Install](./install/)
+- [Schema](./schema.md)
 - [Create Database & related everything](./create-database/)
 - [Table](./table/README.md)
 - [Queries](./basic_queries/README.md)
