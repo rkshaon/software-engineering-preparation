@@ -1,8 +1,4 @@
-# Git
-
-Git is a distributed version control system (VCS) that allows developers to track changes in their codebase, collaborate with others, and manage different versions of their projects.
-
-## Key points about Git
+# Key Points about Git
 - Snapshots, Not Differences
     - Unlike traditional VCSs (such as CVS or Subversion), Git doesn’t store changes as a list of file-based differences. Instead, it thinks of its data as a series of snapshots of the entire project.
     - When you commit changes, Git captures a snapshot of all files at that moment and stores a reference to it. If files haven’t changed, Git links to the previous identical version rather than duplicating the entire file.
@@ -18,9 +14,3 @@ Git is a distributed version control system (VCS) that allows developers to trac
 - Popular Platforms
     - GitHub, GitLab, and Bitbucket are popular platforms for hosting Git repositories.
     - Developers use Git commands to interact with these platforms and manage their projects.
-
-In summary, Git’s snapshot-based approach, local operations, and powerful branching capabilities make it a versatile and widely adopted version control system
-
-#### References
-- [What is Git @g it-scm.com](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
-- [w3schools.com](https://www.w3schools.com/git/default.asp)
