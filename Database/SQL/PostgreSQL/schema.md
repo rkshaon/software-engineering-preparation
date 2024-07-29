@@ -30,24 +30,24 @@ SET search_path TO schema_name;
 ```
 
 To search on multiple schema execute the command below:
-```
+```sql
 SET search_path TO schema1, public;
 ```
 
 To reset to default execute the command below:
-```
+```sql
 SET search_path TO default;
 ```
 
 ### Show Search Path
 
 To see the schema list use the `SHOW search_path` command:
-```
+```sql
 SHOW search_path;
 ```
 
 This will display something like below:
-```
+```sql
 your_database=# SHOW search_path;
  search_path
 -------------
@@ -89,7 +89,7 @@ sudo systemctl restart postgresql
 Set the search path for a specific role using the `ALTER ROLE` command.
 
 #### Connect and Apply ALTER ROLE command
-```
+```sql
 ALTER ROLE your_role SET search_path TO schema1, public;
 ```
 
