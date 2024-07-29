@@ -14,7 +14,7 @@ There are server types of `join`, they are:
 To demonastrate `inner join`, `left join`, `right join`, `full join`, `cross join` query, let's create 2 tables **`Student`** and **`Result`** like below.
 
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS Student(
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS Student(
 ```
 **`Student`** table will hold data of `id` which is primary key and will be automatically increment, `name`, `roll` which are character varying with maximum length of 255 character.
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS Result (
     id SERIAL PRIMARY KEY,
     student_id INT,
@@ -41,7 +41,7 @@ For auto incremented integer field `serial` is used in **PostgreSQL**, if you ar
 
 ## Inner Join
 Run the query below:
-```
+```sql
 SELECT student.id, student.name, student.roll, result.gpa
 FROM student
 INNER JOIN result
@@ -53,7 +53,7 @@ This query will return records that have matching values in both tables means th
 
 ## Left Join
 Run the query below:
-```
+```sql
 SELECT student.id, student.name, student.roll, result.gpa
 FROM student
 LEFT JOIN result
@@ -66,7 +66,7 @@ Returns all records from the left table **``Student``**, and the matched records
 
 # Right Join
 Run the query below:
-```
+```sql
 SELECT student.id, student.name, student.roll, result.gpa
 FROM student
 RIGHT JOIN result
@@ -78,7 +78,7 @@ Returns all records from the right table **``Result``**, and the matched records
 
 ## Full Join / Full Outer Join
 Run the query below:
-```
+```sql
 SELECT student.id, student.name, student.roll, result.gpa
 FROM student
 FULL OUTER JOIN result
@@ -90,7 +90,7 @@ Returns all records when there is a match in either left **``Student``** or righ
 
 ## Cross Join
 Run the query below:
-```
+```sql
 SELECT student.id, student.name, student.roll, result.gpa
 FROM student
 CROSS JOIN result;
@@ -100,7 +100,7 @@ Returns all records where each row from the **`Student`** table is combined with
 
 To demonastrate `self join`, let's create a table **`Employee`** like below.
 
-```
+```sql
 CREATE TABLE Employee (
     employee_id SERIAL PRIMARY KEY,
     employee_name VARCHAR(255),
@@ -112,7 +112,7 @@ CREATE TABLE Employee (
 
 ## Self Join
 Run the query below:
-```
+```sql
 SELECT e1.employee_name AS Employee, e2.employee_name AS Manager
 FROM Employee e1, Employee e2
 WHERE e1.manager_id = e2.employee_id;
