@@ -19,11 +19,10 @@ def upload(file: str, *, quality: Quality, privacy: Privacy) -> None:
 
 def main() -> None:
     upload(
-        'dog.mp4', 
-       quality=Quality.HIGH, 
-       privacy=Privacy.PUBLIC
+        'dog.mp4',
+        quality=Quality.HIGH,
+        privacy=Privacy.PUBLIC
     )
-
 
 
 if __name__ == '__main__':
