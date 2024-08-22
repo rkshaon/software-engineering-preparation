@@ -1,6 +1,4 @@
-# Python Tricks
-
-## 0001: `is` vs `==`
+# Python Tricks: `is` vs `==`
 `is`: This operator checks for object identity. In other words, it checks if both variables refer to the exact same object in memory.
 
 `==`: This operator checks for object equality. It checks if the values of the objects on both sides of the operator are equal.
