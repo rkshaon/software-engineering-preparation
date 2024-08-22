@@ -1,24 +1,34 @@
 # Python
 
-- [Environment](./environment/)
-- [Python Basics](./basics/)
+
+- [Environment](./environment/README.md)
+
+- [Python Basics](./basics/README.md)
     - [Syntax](./basics/syntax/README.md)
     - [Data Types](./basics/data_types/README.md)
     - [Control Flow](./basics/control_flow/README.md)
     - [Functions](./basics/functions/README.md)
     - [Object Oriented Programing](./basics/OOP/README.md)
-- [Advanced Topics](./advanced_topics/)
+
+- [Advanced Topics](./advanced_topics/README.md)
     - [Lambda Function](./advanced_topics/lambda_function/README.md)
     - [List Comprehensions](./advanced_topics/list_comprehensions/README.md)
     - [Generator Expressions](./advanced_topics/generator_expressions/README.md)
+
 - [Debugging](./debugging/README.md)
-- [Python Tricks](./tricks/)
-- [Python Tips](./tips/)
-    - [Use raise instead of pass in function](./004__tips/001__use_raise_instead_of_pass_in_function/)
-    - [Specify function argument and return type](./004__tips/002__specify_function_argument_and_return_type/)
-    - [Use docstring](./004__tips/003__use_doctstring/)
-- [Python Projects](./projects/)
-    - [PDF to Image](.projects/001__pdf_to_image/)
+
+- [Python Tricks](./tricks/README.md)
+
+- [Python Tips](./tips/README.md)
+    - [Use raise instead of pass in function](./tips/001__use_raise_instead_of_pass_in_function/README.md)
+    - [Specify function argument and return type](./tips/002__specify_function_argument_and_return_type/README.md)
+    - [Use docstring](./tips/003__use_doctstring/README.md)
+    - [Force keyword args](./tips/004__force_keyword_args_for_complex_functions_with_*/README.md)
+    - [Use *args](./tips/005__use_*args/README.md)
+
+- [Python Projects](./projects/README.md)
+    - [PDF to Image](./projects/001__pdf_to_image/README.md)
+
     <!-- - [Rock Paper Scissors](./005__projects/001__rock_paper_scissors/)
     - [Hangman](./005__projects/002__hangman/)
     - [Tic Tac Toe](./005__projects/003__tic_tac_toe/)
