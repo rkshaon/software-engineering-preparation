@@ -1,4 +1,4 @@
-# Set
+# Python Set
 A `Set` is a built-in data type that is unordered collection of `unique` data.
 
 ## Characteristics of `Set`
