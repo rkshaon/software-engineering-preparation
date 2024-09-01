@@ -1,4 +1,4 @@
-# Python Trick: Sort a Python Dictionary by Value
+# Sort a Python Dictionary by Value
 - Created a dictionary x = {'a': 4, 'c': 2, 'd': 1, 'b': 3, 'e': 5} where keys are letters and values are integers.
 - The dictionary `x` is printed as it is, showing the original unordered state.
 
