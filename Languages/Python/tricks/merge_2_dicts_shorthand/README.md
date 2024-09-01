@@ -1,4 +1,4 @@
-# Python Tricks: Merge 2 dictionaries
+# Merge 2 dictionaries
 Python merges dictionary keys in the order listed in the expression, overwriting duplicates from left to right.
 
 ## Example
