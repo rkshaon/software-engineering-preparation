@@ -3,7 +3,6 @@ from pdf2image import convert_from_path
 import os
 
 
-
 # Get the current file's directory
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
