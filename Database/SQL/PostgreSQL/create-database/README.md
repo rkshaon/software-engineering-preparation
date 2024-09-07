@@ -18,7 +18,7 @@ Note: This command will return list of the users.
 
 ## Create `User` with password
 ```sql
-CREATE USER username WITH PASSWORD 'your-password';
+CREATE USER username WITH PASSWORD 'YourPassword';
 ```
 Note: Replace `username` with your database user, and password with `your password`.
 
@@ -30,9 +30,9 @@ Note: This command will return the list of databases.
 
 ## Create `Database` with giving ownership to `User`
 ```sql
-CREATE DATABASE db-name OWNER username;
+CREATE DATABASE db_name OWNER username;
 ```
-Note: Replace `db-name` with your project database name and `username` with your dabatase user.
+Note: Replace `db_name` with your project database name and `username` with your dabatase user.
 
 ## Grant previleges on database
 ```sql
