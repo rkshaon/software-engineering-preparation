@@ -20,3 +20,5 @@
     - Model Inheritance
 - [Middleware](./middleware.md)
 - [Django Signal](./signal.md)
+- Caching
+- Serializer
