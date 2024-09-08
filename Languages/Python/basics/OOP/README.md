@@ -35,3 +35,8 @@ The mechanism by which one class (child class) inherits attributes and methods f
 The ability to present the same interface for differen data types. It allows methods to do different things based on the object it is acting upon.
 
 [Details with example](./polymorphism.md)
+
+## Abstract Class in Python
+An abstract class is a class that cannot be instantiated directly and is used to define common methods or attributes that must be implemented by its subclasses. Abstract classes serve as blueprints for other classes.
+
+[Details with example](./abstract_class_in_python.md)
