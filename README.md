@@ -10,12 +10,11 @@ This repository will help to prepare to be a software engineer.
 To see complete study guideline, click [here](./GUIDELINE.md) 
 -->
 
-## Roadmap
-Here is roadmap to be a software engineer. To see complete roadmap, click [here](./Roadmap/)
-
 ## Index
-<!-- To see complete index, click [here](./INDEX.md) -->
-<!-- {% include "INDEX.md" %} -->
+- [Roadmap](./Roadmap/README.md)
+- [Books](./Books/README.md)
+- [Papers](./Papers/README.md)
+- [Documentations](./Documentations/README.md)
 - [Language](./Languages/README.md)
     - [Python](./Languages/Python/README.md)
 - [Database](./Database/README.md)
@@ -25,7 +24,10 @@ Here is roadmap to be a software engineer. To see complete roadmap, click [here]
         - [Redis](./Database/NoSQL/Redis/README.md)
 - [Web Framework](./WebFramework/README.md)
     - [Django](./WebFramework/Django/README.md)
+- [Testing](./Testing/README.md)
 - [Git](./git/README.md)
+- [Operating Systems](./OperatingSystem/README.md)
+- [Deployment](./Deployment/README.md)
 - [Concepts and Comparisons](./ConceptsAndComparisons/README.md)
 - [API Development](./API/README.md)
     - [Components](./API/components/README.md)
@@ -38,15 +40,6 @@ Here is roadmap to be a software engineer. To see complete roadmap, click [here]
     - [nvm](./Tools/nvm/README.md)
     - [IDE](./Tools/IDEorEditor/README.md)
 - [Interview Questions](./InterviewQuestions/README.md)
-
-## Books
-To see all books, click [here](./Books/)
-
-## Papers
-To see all papers, click [here](./Papers/)
-
-## Documentations
-To see all documentations, clieck [here](./Documentations/README.md)
 
 ## Contributing
 Contributions are always welcomed. Feel free to raise new issues, file new PRs. Consider giving it a star and fork this repo!
