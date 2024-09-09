@@ -14,7 +14,30 @@ To see complete study guideline, click [here](./GUIDELINE.md)
 Here is roadmap to be a software engineer. To see complete roadmap, click [here](./Roadmap/)
 
 ## Index
-To see complete index, click [here](./INDEX.md)
+<!-- To see complete index, click [here](./INDEX.md) -->
+<!-- {% include "INDEX.md" %} -->
+- [Language](./Languages/README.md)
+    - [Python](./Languages/Python/README.md)
+- [Database](./Database/README.md)
+    - [SQL](./Database/SQL/README.md)
+        - [PostgreSQL](./Database/SQL/PostgreSQL/README.md)
+    - [NoSQL](./Database/NoSQL/README.md)
+        - [Redis](./Database/NoSQL/Redis/README.md)
+- [Web Framework](./WebFramework/README.md)
+    - [Django](./WebFramework/Django/README.md)
+- [Git](./git/README.md)
+- [Concepts and Comparisons](./ConceptsAndComparisons/README.md)
+- [API Development](./API/README.md)
+    - [Components](./API/components/README.md)
+    - [Caching](./API/Caching/README.md)
+    - [API Development Tips](./API/tips/README.md)
+- [Design Patterns](./DesignPatterns/README.md)
+- [Software Engineering Principles](./SoftwareEngineeringPrinciples/README.md)
+- [Tools](./Tools/README.md)
+    - [zsh](./Tools/zsh/README.md)
+    - [nvm](./Tools/nvm/README.md)
+    - [IDE](./Tools/IDEorEditor/README.md)
+- [Interview Questions](./InterviewQuestions/README.md)
 
 ## Books
 To see all books, click [here](./Books/)
