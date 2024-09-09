@@ -39,7 +39,7 @@ To see complete study guideline, click [here](./GUIDELINE.md)
     - [zsh](./Tools/zsh/README.md)
     - [nvm](./Tools/nvm/README.md)
     - [IDE](./Tools/IDEorEditor/README.md)
-- [Interview Questions](./InterviewQuestions/README.md)
+- [Interview Questions](./InterviewPreparations/README.md)
 
 ## Contributing
 Contributions are always welcomed. Feel free to raise new issues, file new PRs. Consider giving it a star and fork this repo!
