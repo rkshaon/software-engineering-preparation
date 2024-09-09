@@ -7,23 +7,23 @@ With `nvm`, anyone can easily install, switch between, and manage different vers
 ### macOS / Linux
 Open a terminal and execute the command below.
 
-```
+```shell
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 ```
 
 Then need to add `nvm` on shell profile. To do so, the following line have to add in `.bashrc`, `.bash_profile`, or `.zshrc` file.
-```
+```shell
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
 Then restart terminal or run the following command.
-```
+```shell
 source ~/.bashrc
 ```
 for `bashrc`
 
-```
+```shell
 source ~/.zshrc
 ```
 for `zshrc`
@@ -33,28 +33,28 @@ for `zshrc`
 
 ## Use
 ### Install node
-```
+```shell
 nvm install x
 ```
 Replace `x` by a node version.
 
 Like install node.js 18
-```
+```shell
 nvm install 18
 ```
 
 Like install node.js 20
-```
+```shell
 nvm install 20
 ```
 
 ### Listing all node version
-```
+```shell
 nvm ls
 ```
 
 Output will be like below.
-```
+```shell
        v18.20.4
 ->     v20.15.1
          system
@@ -78,18 +78,18 @@ This means node.js v20.15.1 is used here.
 
 ### Switch
 Consider you want to switch `node.js v18` from current version.
-```
+```shell
 nvm use 18
 ```
 
 ### Set Default node.js Version
-```
+```shell
 nvm alias default 20
 ```
 This will set default `node.js` version in shell.
 
 ### Verify Version
-```
+```shell
 node -v
 ```
 
