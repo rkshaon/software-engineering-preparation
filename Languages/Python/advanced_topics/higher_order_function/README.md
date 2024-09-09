@@ -44,9 +44,9 @@ Here, `multiplier` is a higher-order function that returns a new function, which
 1. Map
 2. Filter
 3. Reduce
-2. Decorators
+4. Decorators
 
-### Map
+### map()
 Applies a given function to each item in an iterable (e.g., list) and returns a map object (an iterator).
 
 ```python
@@ -55,4 +55,57 @@ squared = map(lambda x: x ** 2, numbers)
 print(list(squared))        # Output: [1, 4, 9, 16, 25]
 ```
 
-### Filter
+### filter()
+Applies a function to each item and returns an iterator with items that evaluate to `True`.
+
+```python
+numbers = [1, 2, 3, 4, 5]
+even_numbers = filter(lambda x: x % 2 == 0, numbers)
+print(list(even_numbers))   # Output: [2, 4]
+```
+
+### reduce()
+Reduces an iterable to a single value using a given function. It's part of the `functools` module.
+
+```python
+from functools import reduce
+
+numbers = [1, 2, 3, 4, 5]
+product = reduce(lambda x, y: x * y, numbers)
+print(product)              # Output: 120
+```
+
+### Decorator
+A **decorator** in Python is a higher-order function that allows you to modify or enhance the behavior of another function or method without changing its actual code. They are typically used for adding functionality, logging, authentication, caching, etc., around functions in a clean and reusable way.
+
+```python
+def my_decorator(func):
+    def wrapper():
+        print("Before the function call")
+        func()
+        print("After the function call")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+
+# Output
+# ======
+# Before the function call
+# Hello!
+# After the function call
+```
+
+## Benefits
+- **Code Reusability:** You can reuse the same logic on different data by passing different functions.
+- **Abstraction:** They allow for more abstract code, reducing boilerplate and focusing on behavior instead of implementation details.
+- **Modularity:** Higher-order functions encourage the separation of concerns by isolating different behaviors into their own functions.
+- **Flexibility:** They enable dynamic behavior where the logic can be passed in as an argument or returned as a function.
+
+## Real-World Examples
+- **Event Handling in UI Development:** In many UI frameworks, functions are passed as callbacks for events like `onClick`. These functions are examples of higher-order functions because they accept other functions (handlers) to trigger when an event occurs.
+- **Middleware in Web Development:** In frameworks like Flask or Django, middleware functions act as higher-order functions, intercepting HTTP requests and responses, modifying them before or after other functions.
+
