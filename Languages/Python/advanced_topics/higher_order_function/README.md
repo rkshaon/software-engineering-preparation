@@ -99,6 +99,8 @@ say_hello()
 # After the function call
 ```
 
+The `@my_decorator` syntax is a shorthand for wrapping `say_hello()` with `my_decorator`, which adds behavior before and after the original function.
+
 ## Benefits
 - **Code Reusability:** You can reuse the same logic on different data by passing different functions.
 - **Abstraction:** They allow for more abstract code, reducing boilerplate and focusing on behavior instead of implementation details.
@@ -114,6 +116,9 @@ In functional programming, higher-order functions are central to paradigms like,
 - Currying
 - Composition
 - Event Handlers
+- Callbacks
+- Function Factories
+- Closures
 
 ### Currying
 This is when a function is transformed into a sequence of functions, each taking a single argument.
@@ -128,6 +133,8 @@ def add(x, y):
 curried_add = curry(add)
 print(curried_add(2)(3))        # Output: 5
 ```
+
+This is useful when you want to fix a certain parameter (like `5`) and reuse the function means currying is useful when you need to partially apply a function by breaking down a function that takes multiple arguments into a series of functions that take one argument at a time. It allows you to pre-define certain arguments and reuse the function with different parameters.
 
 ### Composition
 You can compose multiple functions to create new behavior.
@@ -175,6 +182,21 @@ def handle_data(data):
 fetch_data(handle_data)  # Handle data after fetching it
 ```
 
+### Function Factories
+Function factories are higher-order functions that return new functions based on the arguments passed. This pattern is often used when you need to generate functions with customized behavior.
+
+```python
+def make_multiplier(factor):
+    def multiplier(x):
+        return x * factor
+    return multiplier
+
+double = make_multiplier(2)
+print(double(5))  # Output: 10
+```
+
+Here, `make_multiplier()` generates new multiplier functions (like `double`), demonstrating how higher-order functions can dynamically generate customized functionality.
+
 ### Closures
 A closure occurs when a nested function captures variables from its enclosing scope even after the outer function has finished execution.
 
@@ -188,6 +210,26 @@ double = make_multiplier(2)
 print(double(5))  # Output: 10
 ```
 Here, multiplier() retains access to n even after make_multiplier() has returned, demonstrating a closure.
+
+### Closures with State Management
+Closures occur when a function remembers the environment in which it was created, even after the outer function has finished executing. This is helpful for encapsulating state without using classes.
+
+```python
+def counter():
+    count = 0
+    def increment():
+        nonlocal count
+        count += 1
+        return count
+    return increment
+
+count_up = counter()
+print(count_up())  # Output: 1
+print(count_up())  # Output: 2
+```
+
+The `increment` function "remembers" the value of `count` from its outer scope, allowing it to maintain state across calls.
+
 
 These real-world applications of higher-order functions show their power in asynchronous programming, event-driven systems, and encapsulating state with closures.
 
