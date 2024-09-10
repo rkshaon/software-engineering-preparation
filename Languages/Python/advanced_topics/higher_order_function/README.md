@@ -109,3 +109,86 @@ say_hello()
 - **Event Handling in UI Development:** In many UI frameworks, functions are passed as callbacks for events like `onClick`. These functions are examples of higher-order functions because they accept other functions (handlers) to trigger when an event occurs.
 - **Middleware in Web Development:** In frameworks like Flask or Django, middleware functions act as higher-order functions, intercepting HTTP requests and responses, modifying them before or after other functions.
 
+## Functional Programming with Higher-Order Functions
+In functional programming, higher-order functions are central to paradigms like,
+- Currying
+- Composition
+- Event Handlers
+
+### Currying
+This is when a function is transformed into a sequence of functions, each taking a single argument.
+
+```python
+def curry(f):
+    return lambda x: lambda y: f(x, y)
+
+def add(x, y):
+    return x + y
+
+curried_add = curry(add)
+print(curried_add(2)(3))        # Output: 5
+```
+
+### Composition
+You can compose multiple functions to create new behavior.
+
+```python
+def compose(f, g):
+    return lambda x: f(g(x))
+
+def double(x):
+    return x * 2
+
+def increment(x):
+    return x + 1
+
+composed_function = compose(double, increment)
+print(composed_function(5))     # Output: 12 (5 + 1 = 6, then 6 * 2 = 12)
+```
+
+### Event Handler
+Event handlers are higher-order functions that react to events like button clicks.
+
+```python
+import tkinter as tk
+
+def on_click():
+    print("Button clicked!")
+
+root = tk.Tk()
+button = tk.Button(root, text="Click Me", command=on_click)  # Event handler: on_click
+button.pack()
+root.mainloop()
+```
+
+### Callbacks
+Callbacks are widely used in asynchronous programming. In Python, a callback could be a function passed to handle the result of another function.
+
+```python
+def fetch_data(callback):
+    data = {"name": "Alice", "age": 25}
+    callback(data)
+
+def handle_data(data):
+    print(f"Data received: {data}")
+
+fetch_data(handle_data)  # Handle data after fetching it
+```
+
+### Closures
+A closure occurs when a nested function captures variables from its enclosing scope even after the outer function has finished execution.
+
+```python
+def make_multiplier(n):
+    def multiplier(x):
+        return x * n  # `n` is captured from the outer scope
+    return multiplier
+
+double = make_multiplier(2)
+print(double(5))  # Output: 10
+```
+Here, multiplier() retains access to n even after make_multiplier() has returned, demonstrating a closure.
+
+These real-world applications of higher-order functions show their power in asynchronous programming, event-driven systems, and encapsulating state with closures.
+
+A higher-order function is a versatile and powerful concept that forms the backbone of many functional programming techniques. Whether you're using them for decorators, callback functions, or functional programming techniques like currying and composition, higher-order functions help make code more modular, reusable, and expressive.
