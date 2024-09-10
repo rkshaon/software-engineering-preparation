@@ -3,7 +3,7 @@ A **higher-order function** is a function that either:
 1. Takes one or more functions as arguments.
 2. Returns a function as its result.
 
-**Higher-order function**s allow functions to be treated like any other value, enabling more flexible, reusable, and modular code. This concept is foundational in functional programming and is used extensively in many programming languages, including Python.
+**Higher-order functions** allow functions to be treated like any other value, enabling more flexible, reusable, and modular code. This concept is foundational in functional programming and is used extensively in many programming languages, including Python.
 
 ## Key Characteristics
 - **Accepts functions as arguments:** This allows for dynamic behavior and code reuse.
