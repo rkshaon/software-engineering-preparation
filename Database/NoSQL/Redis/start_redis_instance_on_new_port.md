@@ -1,4 +1,4 @@
-# Start Redist Instance on the New Port
+# Start Redis Instance on the New Port
 If you haven't already started a Redis instance on the new port (e.g., 6382), you'll need to do that. You can start Redis on a specific port using a configuration file or directly via the command line.
 
 ## Start
