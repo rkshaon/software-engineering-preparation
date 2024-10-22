@@ -55,7 +55,7 @@ Description=Redis In-Memory Data Store for Port 6382
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/redis-server /etc/redis/redis_6382.conf
+ExecStart=/usr/bin/redis-server /etc/redis/redis_6382.conf --supervised systemd --daemonize no
 ExecStop=/usr/bin/redis-cli -p 6382 shutdown
 Restart=always
 
