@@ -38,11 +38,11 @@ Now, you need to edit the port number of the new `conf` file. Open the file.
 sudo nano /etc/redis/redis_6382.conf
 ```
 
-Now, find the line with `port` and it is possible to be `port 6379`, update this line into `port 6382`, then save and exit.
+Now, find the line with `port` and it is possible to be `port 6379`, update this line into `port 6382`, and make sure `supervised` is `systemd`, means `supervised systemd` then save and exit.
 
 ### Create a New Service File
 #### Create File
-Create a new systemd service file for the Redis instance on port `6382`.
+Create a new systemd service file for the Redis instance on port `6382`. You can create a new service file using the command below.
 ```bash
 sudo nano /etc/systemd/system/redis_6382.service
 ```
@@ -61,6 +61,51 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
+```
+
+#### Copy Service File
+Or you can copy `redis.service` file. To do so, execute the command below.
+```bash
+sudo cp /etc/systemd/system/redis.service /etc/systemd/system/redis_6832.service
+```
+And now need to edit a few lines, first open the file.
+```bash
+sudo nano /etc/sytemd/system/redis_6832.service
+```
+
+Then edit `ExecStart`
+```bash
+ExecStart=/usr/bin/redis-server /etc/redis/redis_6382.conf --supervised systemd --daemonize no
+```
+
+And edit `PIDFile`
+```bash
+PIDFile=/run/redis/redis-6832.pid
+```
+
+And edit `Alias`
+```bash
+Alias=redis_6832.service
+```
+
+Then save and exit.
+
+
+Make sure `PIDFile` is unique. To do so, open the `redis_6832.conf` file.
+```bash
+sudo nano /etc/redis/redis_6382.conf
+```
+
+And then update `pidfile`
+```bash
+pidfile /var/run/redis/redis-6382.pid
+```
+
+Then save and exit.
+
+#### Reload the daemon
+```bash
+sudo systemctl daemon-reload
 ```
 
 #### Enable the Service
