@@ -1,17 +1,19 @@
 # Install Redis on Ubuntu
 
-**Copy the command and execute on your terminal**
 
+#### Update
 ```
 sudo apt update
 ```
 To update local `apt` package cache.
 
+#### Install
 ```
 sudo apt install redis-server
 ```
 To download and install `redis-server`
 
+#### Edit Configuration
 ```
 sudo nano /etc/redis/redis.conf
 ```
@@ -31,10 +33,23 @@ supervised systemd
 ```
 Then save and close the file.
 
+#### Start the Service
+```
+sudo systemctl start redis.service
+```
+To start the service.
+
 ```
 sudo systemctl restart redis.service
 ```
 To restart the service.
+
+#### Add at Boot
+```bash
+sudo systemctl enable redis-server
+```
+
+This will add on boot.
 
 <!-- ```
 sudo systemctl enable redis
