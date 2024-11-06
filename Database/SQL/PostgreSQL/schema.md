@@ -93,3 +93,25 @@ Set the search path for a specific role using the `ALTER ROLE` command.
 ALTER ROLE your_role SET search_path TO schema1, public;
 ```
 
+## Drop Schema
+To drop a schema in `PostgreSQL`, you can use the `DROP SCHEMA` command.
+```
+DROP SCHEMA schema_name;
+```
+
+### Drop Schema Options
+#### CASCADE
+Use this option if you want to drop the schema along with all objects (like tables, views, etc.) contained within it.
+```
+DROP SCHEMA schema_name CASCADE;
+```
+
+***Note***: Be cautious when using `CASCADE`, as it will remove all objects within the schema, which is irreversible unless you have backups.
+
+
+#### RESTRICT
+This is the default behavior. It will prevent the schema from being dropped if it contains any objects. You’ll need to remove all objects first to drop the schema.
+```
+DROP SCHEMA schema_name RESTRICT;
+```
+
