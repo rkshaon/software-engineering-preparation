@@ -3,7 +3,7 @@
 The base class for all DRF views. Provides complete control over request handling and response generation.
 
 ## Example
-```
+```python
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -15,7 +15,7 @@ class ExampleAPIView(APIView):
 
     def post(self, request):
         return Response(request.data, status=status.HTTP_201_CREATED)
-```python
+```
 
 ## Use Case
 - When you need complete control over request/response handling.
