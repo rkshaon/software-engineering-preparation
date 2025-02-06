@@ -1,5 +1,6 @@
 # Deployement
 
+- [DevOps](./DevOps/README.md)
 - [nginx](./nginx.md)
 - [Jenkins](./jenkins/README.md)
 - [Prepare Ubuntu Server](./prepare_server.md)
