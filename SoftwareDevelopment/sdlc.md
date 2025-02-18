@@ -42,10 +42,70 @@ At this stage, the fundamental development of the product starts. For this, deve
 **Diagram**: _Stage 4- Development_
 
 ### Stage-5: Product Testing and Integration
-After the development of the product, testing of the software is necessary to ensure its smooth execution. Although, minimal testing is conducted at every stage of SDLC. Therefore, at this stage, all the probable flaws are tracked, fixed, and retested. This ensures that the product confronts the quality requirements of SRS. 
+At this stage, all the probable flaws are tracked, fixed, and retested (as in every stage a minimum testing is conducted). This ensures that the product confronts the quality requirements of SRS. 
 
-Documentation, Training, and Support: Software documentation is an essential part of the software development life cycle. A well-written document acts as a tool and means to information repository necessary to know about software processes, functions, and maintenance. Documentation also provides information about how to use the product. Training in an attempt to improve the current or future employee performance by increasing an employee’s ability to work through learning, usually by changing his attitude and developing his skills and understanding. 
+![](https://media.geeksforgeeks.org/wp-content/uploads/20231218094631/5.jpg)
+**Diagram**: _Stage 5- Testing_
 
-![](https://media.geeksforgeeks.org/wp-content/uploads/20231218094538/4.jpg)
-**Diagram**: _Stage 4- Development_
+### Stage-6: Deployment and Maintenance of Products
+After detailed testing, the conclusive product is released in phases as per the organization’s strategy and then it is tested in a real industrial environment.
 
+![](https://media.geeksforgeeks.org/wp-content/uploads/20231218094709/6.jpg)
+**Diagram**: _Stage 5- Deployment and Maintenance_
+
+## Methods of Software Development Life Cycle
+To this day, we have more than 50 recognized SDLC models in use. But None of them is perfect, and each brings its favorable aspects and disadvantages for a specific software development project or a team. Here some:
+
+- Waterfall Model
+
+- Agile Model
+
+- Iterative Model
+
+- Spiral Model
+
+- V-Shaped Model
+
+- Big Bang Model
+
+## What is the need for SDLC?
+SDLC is a method, approach, or process that is followed by a software development organization while developing any software. SDLC models were introduced to follow a disciplined and systematic method while designing software. With the software development life cycle, the process of software design is divided into small parts, which makes the problem more understandable and easier to solve. SDLC comprises a detailed description or step-by-step plan for designing, developing, testing, and maintaining the software.
+
+## How to Choose an SDLC Model?
+Choosing the right SDLC (Software Development Life Cycle) model is essential for project success. Here are the key factors to consider:
+
+### Project Requirements:
+- Clear Requirements: Use Waterfall or V-Model if requirements are well-defined and unlikely to change.
+- Changing Requirements: Use Agile or Iterative models if requirements are unclear or likely to evolve.
+
+### Project Size and Complexity:
+- Small Projects: Use Waterfall or RAD for small, simple projects.
+- Large Projects: Use Agile, Spiral, or DevOps for large, complex projects that need flexibility.
+
+### Team Expertise:
+- Experienced Teams: Use Agile or Scrum if the team is familiar with iterative development.
+- Less Experienced Teams: Use Waterfall or V-Model for teams needing structured guidance.
+
+### Client Involvement:
+- Frequent Client Feedback: Use Agile, Scrum, or RAD if regular client interaction is needed.
+- Minimal Client Involvement: Use Waterfall or V-Model if client involvement is low after initial planning.
+
+### Time and Budget Constraints:
+- Fixed Time and Budget: Use Waterfall or V-Model if you have strict time and budget limits.
+- Flexible Time and Budget: Use Agile or Spiral if you can adjust time and budget as needed.
+
+### Risk Management:
+- High-Risk Projects: Use Spiral for projects with significant risks and uncertainties.
+- Low-Risk Projects: Use Waterfall for projects with minimal risks.
+
+### Product Release Timeline:
+- Quick Release Needed: Use Agile or RAD to deliver products quickly.
+- Longer Development Time: Use Waterfall or V-Model for projects with no urgent deadlines.
+
+### Maintenance and Support:
+- Long-Term Maintenance: Use Agile or DevOps for projects needing continuous updates and support.
+- Minimal Maintenance: Use Waterfall or V-Model if little future maintenance is expected.
+
+### Stakeholder Expectations:
+- High Stakeholder Engagement: Use Agile or Scrum if stakeholders want ongoing involvement.
+- Low Stakeholder Engagement: Use Waterfall or V-Model if stakeholders prefer involvement only at major milestones.
