@@ -10,7 +10,7 @@ Design patterns are proven solutions to common problems in software design. They
 
 ## Design Patterns
 - [Creational Patterns](./CreationalPatterns/README.md)
-    - Abstract Factory
+    - [Abstract Factory](./CreationalPatterns/AbstractFactory/README.md)
     - [Builder](./CreationalPatterns/Builder/README.md)
     - [Factory Method](./CreationalPatterns/FactoryMethod/README.md)
     - Prototype
