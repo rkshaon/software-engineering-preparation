@@ -54,3 +54,5 @@ Output:
 ```python
 Burger(bun=True, lettuce=False, cheese=True, tomato=True)
 ```
+
+Builder pattern uses ***[method chaining](../../../Languages/Python/basics/OOP/method_chaining.md)*** to build the object step-by-step, making the code cleaner and more readable.
