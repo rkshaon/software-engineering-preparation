@@ -4,5 +4,5 @@ Creational design patterns deal with object creation mechanisms, trying to creat
 - [Abstract Factory](./AbstractFactory/README.md)
 - [Builder](./Builder/README.md)
 - [Factory Method](./FactoryMethod/README.md)
-- Prototype
+- [Prototype](./Prototype/README.md)
 - [Singleton](./Singleton/README.md)

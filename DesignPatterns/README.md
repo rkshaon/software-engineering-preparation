@@ -13,7 +13,7 @@ Design patterns are proven solutions to common problems in software design. They
     - [Abstract Factory](./CreationalPatterns/AbstractFactory/README.md)
     - [Builder](./CreationalPatterns/Builder/README.md)
     - [Factory Method](./CreationalPatterns/FactoryMethod/README.md)
-    - Prototype
+    - [Prototype](./CreationalPatterns/Prototype/README.md)
     - [Singelaton](./CreationalPatterns/Singleton/README.md)
 - Structural Patterns
     - Adapter (or Wrapper)
