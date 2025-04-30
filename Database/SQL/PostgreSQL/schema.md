@@ -56,6 +56,26 @@ your_database=# SHOW search_path;
 (2 row)
 ```
 
+### Show the schema list
+
+To see the schema list use `\dn` command:
+```sql
+\dn
+```
+
+This will display like below:
+```sql
+       List of schemas
+  Name   |       Owner       
+---------+-------------------
+ public  | pg_database_owner
+ tenant3 | sale_dev
+ tenant4 | sale_dev
+ tenant5 | sale_dev
+ tenant6 | sale_dev
+(5 rows)
+```
+
 ### Schema Session
 
 When you set the search_path in a PostgreSQL session, it only affects that session. If you close the shell and open a new one, the search_path will reset to its default value, which typically includes the public schema.
@@ -75,12 +95,12 @@ sudo nano /etc/postgresql/<version>/main/postgresql.conf
 ```
 
 #### Modify the `search_path`
-```
+```bash
 search_path = 'schema1, public'
 ```
 
 #### Restart PostgreSQL
-```
+```bash
 sudo systemctl restart postgresql
 ```
 
@@ -95,14 +115,18 @@ ALTER ROLE your_role SET search_path TO schema1, public;
 
 ## Drop Schema
 To drop a schema in `PostgreSQL`, you can use the `DROP SCHEMA` command.
-```
+```sql
 DROP SCHEMA schema_name;
+```
+For making more sure check if schema exist.
+```sql
+DROP SCHEMA IF EXISTS schema_name CASCADE;
 ```
 
 ### Drop Schema Options
 #### CASCADE
 Use this option if you want to drop the schema along with all objects (like tables, views, etc.) contained within it.
-```
+```sql
 DROP SCHEMA schema_name CASCADE;
 ```
 
@@ -111,7 +135,7 @@ DROP SCHEMA schema_name CASCADE;
 
 #### RESTRICT
 This is the default behavior. It will prevent the schema from being dropped if it contains any objects. You’ll need to remove all objects first to drop the schema.
-```
+```sql
 DROP SCHEMA schema_name RESTRICT;
 ```
 
