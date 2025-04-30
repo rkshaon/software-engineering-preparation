@@ -4,3 +4,5 @@ To effectively implement continuous integration, continuous deployment, and test
 - [DevOps Life Cycle](../DevOps/life_cycle.md)
 - [Software Development Life Cycle](../../SoftwareDevelopment/sdlc.md)
 - [Primary Use of Jenkins in DevOps](./primary_use.md)
+- [Git](../../git/git/README.md)
+- GitHub, GitLab etc
