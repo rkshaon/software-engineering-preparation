@@ -1,8 +1,47 @@
 # Singelaton
-A Singleton pattern in Python is a design pattern that allows you to create just one instance of a class, throughout the lifetime of a program. 
+The **Singleton Pattern** ensures that ***only one instance*** of a class exists during the lifetime of an application, and it provides a ***global point of access*** to it.
+
+**Think of it like**: _"One database connection, one logger, one configuration manager, etc."_
+
+## ✅ Use Cases
+- Database connections
+
+- Logging services
+
+- Caching
+
+- Configuration management
+
+
+## 💡 Core Ideas
+- Private constructor so no one else can instantiate.
+
+- A static method to return the single instance.
+
+- Optionally, thread safety in multithreaded apps.
+
 
 ## Example
+General example
+```python
+class Singleton:
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            print("Creating the Singleton instance...")
+            cls._instance = super(Singleton, cls).__new__(cls)
+        return cls._instance
+
+# Usage
+s1 = Singleton()
+s2 = Singleton()
+
+print(s1 is s2)  # True
 ```
+
+Example for database connection
+```python
 class DatabaseConnection:
     _instance = None
 
@@ -42,12 +81,12 @@ All modules are singleton, by definition.
 
 Let’s create a simple module-level singleton where the data is shared among other modules. Here we will create three python files – [example_module_singleton.py](./example_module_singleton.py), [sample_module1.py](./sample_module1.py), and [sample_module2.py](./sample_module2.py) – in which the other sample modules share a variable from singleton.py. 
 
-```
+```python
 # singleton.py
 shared_variable = "Shared Variable"
 ```
 
-```
+```python
 # sample_module1.py
 import example_singleton as singleton
 
@@ -55,7 +94,7 @@ print(singleton.shared_variable)
 singleton.shared_variable += "(modified by samplemodule1)"
 ```
 
-```
+```python
 # sample_module2.py
 import example_singleton as singleton
 
@@ -63,19 +102,19 @@ print(singleton.shared_variable)
 ```
 
 Now run the both scripts in same Python session. Example to do so.
-```
+```python
 # singleton_main.py
 import sample_module1
 import sample_module2
 ```
 
 Now run the command below.
-```
+```bash
 python3 singleton_main.py
 ```
 
 #### Output
-```
+```bash
 Shared Variable
 Shared Variable(modified by samplemodule1)
 ```
@@ -87,7 +126,7 @@ Here, the value changed by **sample_module1** is also reflected in **sample_modu
 ### Classic Singleton
 Classic Singleton creates an instance only if there is no instance created so far; otherwise, it will return the instance that is already created.
 
-```
+```python
 class SingletonClass(object):
   def __new__(cls):
     if not hasattr(cls, 'instance'):
@@ -105,14 +144,15 @@ singleton.singl_variable = "Singleton Variable"
 print(new_singleton.singl_variable)
 ```
 #### Output
-```
+```bash
 True
 Singleton Variable
 ```
+
 Here, in the `__new__` method, we will check whether an instance is created or not. If created, it will return the instance; otherwise, it will create a new instance. You can notice that singleton and new_singleton return the same instance and have the same variable.
 
 Now, subclass a singleton class.
-```
+```python
 class SingletonClass(object):
   def __new__(cls):
     if not hasattr(cls, 'instance'):
@@ -132,7 +172,7 @@ print(child.singl_variable)
 ```
 
 #### Output
-```
+```bash
 True
 Singleton Variable
 ```
@@ -141,7 +181,7 @@ Singleton Variable
 ### Borg Singleton
 Borg singleton is a design pattern in Python that allows state sharing for different instances.
 
-```
+```python
 class BorgSingleton(object):
   _shared_borg_state = {}
    
@@ -162,7 +202,7 @@ print(childBorg.shared_variable)
 ```
 
 #### Output
-```
+```bash
 False
 Shared Variable
 ```
@@ -171,7 +211,7 @@ The new instance creation process, a shared state is also defined in the `__new_
 
 To achieve a different state, then reset the  `shared_borg_state` attribute.
 
-```
+```python
 class BorgSingleton(object):
   _shared_borg_state = {}
    
@@ -192,7 +232,7 @@ print(newChildBorg.shared_variable)
 
 Here the shared state is reseted and while try to access the shared_variable an error will occure.
 
-```
+```bash
 Traceback (most recent call last):
   File "/home/329d68500c5916767fbaf351710ebb13.py", line 16, in <module>
     print(newChildBorg.shared_variable)
