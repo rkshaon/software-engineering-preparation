@@ -43,3 +43,4 @@ An abstract class is a class that cannot be instantiated directly and is used to
 
 ## OOP Used Terms
 - [Telescoping Constructor](./telescoping_constructor.md)
+- [Method Chaining](./method_chaining.md)
