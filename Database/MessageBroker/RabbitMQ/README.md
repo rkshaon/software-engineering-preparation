@@ -23,10 +23,7 @@
 - How RabbitMQ Works
     - Message flow: Producer → Exchange → Queue → Consumer
     - Internal flow explained with a diagram
-- Installation & Setup
-    - How to install RabbitMQ locally (Docker + native options)
-    - Management UI (http://localhost:15672)
-    - Username/password default
+- [Installation & Setup](./install.md)
 - Code Examples
     - Basic queue (direct)
     - Fanout (Pub/Sub)
