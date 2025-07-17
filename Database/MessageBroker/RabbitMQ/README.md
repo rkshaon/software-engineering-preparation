@@ -1,0 +1,40 @@
+# Message Broker: RabbitMQ
+
+- Introduction
+    - [What is RabbitMQ](./what_is_rabbitmq.md)
+    - [Key Components](./key_components.md)
+    - [Use Cases](./use_cases.md)
+    - [Benefits of RabbitMQ](./benefits.md)
+- Core Concepts
+    - Message
+    - Producer
+    - Consumer
+    - Queue
+    - Exchange
+    - Binding
+    - Routing Key
+    - Acknowledgment
+- Exchange Types
+    - Direct
+    - Fanout (Pub/Sub)
+    - Topic
+    - Headers (optional)
+    - Visuals or diagrams to explain routing behavior
+- How RabbitMQ Works
+    - Message flow: Producer → Exchange → Queue → Consumer
+    - Internal flow explained with a diagram
+- Installation & Setup
+    - How to install RabbitMQ locally (Docker + native options)
+    - Management UI (http://localhost:15672)
+    - Username/password default
+- Code Examples
+    - Basic queue (direct)
+    - Fanout (Pub/Sub)
+    - Topic exchange
+    - Acknowledgment and durable queues
+    - Delayed message (optional)
+    - Dead-letter exchange (optional)
+-  Testing & Debugging
+    - How to test producers/consumers
+    - How to monitor queues via UI or CLI
+    - Common pitfalls (e.g., connection issues, missing queues)
