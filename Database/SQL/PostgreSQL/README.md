@@ -11,3 +11,4 @@
     - [Update](./basic_queries/003__update/README.md)
     - [Delete](./basic_queries/004__delete/)
     - [Joining](./basic_queries/005__joining/README.md)
+- [ENUM Types](./enum_types/README.md)
