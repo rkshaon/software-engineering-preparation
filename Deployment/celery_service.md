@@ -41,8 +41,8 @@ sudo mkdir -p /var/log/backend
 sudo chown ubuntu:ubuntu /var/log/backend
 
 # ensure the pidfile directory is writable if you used --pidfile
-sudo touch /var/www/backend/celerybeat.pid
-sudo chown ubuntu:ubuntu /var/www/backend/celerybeat.pid
+sudo touch /var/www/backend/celeryworker.pid
+sudo chown ubuntu:ubuntu /var/www/backend/celeryworker.pid
 ```
 (Adjust ownership if you prefer a different user.)
 
@@ -115,7 +115,7 @@ sudo chown -R ubuntu:ubuntu /var/www/backend
 
 # create log dir if you plan to use file logging
 sudo mkdir -p /var/log/backend
-sudo chown ubuntu:ubuntu /var/log/mie_auth
+sudo chown ubuntu:ubuntu /var/log/backend
 
 # ensure the pidfile directory is writable if you used --pidfile
 sudo touch /var/www/backend/celerybeat.pid
