@@ -5,3 +5,6 @@
 ### Tips 3: [Use docstring](./003__use_doctstring/)
 ### Tips 4: [Force keyword args](./004__force_keyword_args_for_complex_functions_with_*/)
 ### Tips 5: [Use *args](./005__use_*args/)
+
+### Bonus
+- [Python One Liner Code](one-liner-python-code.md)
