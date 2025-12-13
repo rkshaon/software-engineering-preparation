@@ -249,3 +249,15 @@ Or rerun an earlier GitHub Actions workflow.
 
 - ❌ Deploying as root
 
+## 🧩 Possible Enhancements (Future)
+
+- Atomic deployments (releases/ + symlink)
+
+- Zero-downtime rollback
+
+- Separate environments (dev / staging / prod)
+
+- CDN (Cloudflare)
+
+- Deployment notifications
+
