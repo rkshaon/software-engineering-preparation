@@ -105,3 +105,7 @@ or
 mysql -u root -p
 ```
 
+## Exit from MySQL
+```sql
+EXIT();
+```

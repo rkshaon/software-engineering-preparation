@@ -21,6 +21,16 @@ CREATE DATABASE company_db;
 DROP DATABASE company_db;
 ```
 
+### Show tables
+```sql
+SHOW TABLES;
+```
+
+### Describe table
+```sql
+DESCRIBE employees;
+```
+
 ## User
 ### Existing Users List
 ```sql
@@ -50,6 +60,11 @@ ALTER USER 'app_user'@'localhost'
 IDENTIFIED BY 'NewStrongPassword!';
 ```
 ***Note***: MySQL version `MySQL 8+` required.
+
+### Show current user
+```sql
+SELECT CURRENT_USER();
+```
 
 ## Grant Permissions
 ### Give all permissions on a database
