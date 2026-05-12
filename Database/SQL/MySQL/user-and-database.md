@@ -2,50 +2,50 @@
 
 ## Database
 ### Show the Database List
-```bash
+```sql
 SHOW DATABASES;
 ```
 
 ### Use Database
-```bash
+```sql
 USE company_db;
 ```
 
 ### Create Database
-```bash
+```sql
 CREATE DATABASE company_db;
 ```
 
 ### Delete database
-```bash
+```sql
 DROP DATABASE company_db;
 ```
 
 ## User
 ### Existing Users List
-```bash
+```sql
 SELECT user, host FROM mysql.user;
 ```
 
 ### Create User
-```bash
+```sql
 CREATE USER 'app_user'@'localhost' IDENTIFIED BY 'StrongPassword123!';
 ```
 
 ### Create Remote User
-```bash
+```sql
 CREATE USER 'remote_user'@'%' IDENTIFIED BY 'StrongPassword123!';
 ```
 
 `%` means the user can connect from any host.
 
 ### Remove Users
-```bash
+```sql
 DROP USER 'app_user'@'localhost';
 ```
 
 ### Change User Password
-```bash
+```sql
 ALTER USER 'app_user'@'localhost'
 IDENTIFIED BY 'NewStrongPassword!';
 ```
@@ -53,17 +53,16 @@ IDENTIFIED BY 'NewStrongPassword!';
 
 ## Grant Permissions
 ### Give all permissions on a database
-```bash
+```sql
 GRANT ALL PRIVILEGES ON company_db.* TO 'app_user'@'localhost';
 ```
 
 ### Give read-only access
-```bash
+```sql
 GRANT SELECT ON company_db.* TO 'report_user'@'localhost';
 ```
 
 ### Reload privileges
-```bash
+```sql
 FLUSH PRIVILEGES;
 ```
-

@@ -5,3 +5,4 @@ The documentation covers the full setup flow — dependencies, installation, ser
 
 - [Install](./install.md)
 - [User & Database](./user-and-database.md)
+- [Queries](./queries.md)
