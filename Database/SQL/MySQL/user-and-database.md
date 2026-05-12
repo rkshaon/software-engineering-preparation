@@ -77,6 +77,12 @@ GRANT ALL PRIVILEGES ON company_db.* TO 'app_user'@'localhost';
 GRANT SELECT ON company_db.* TO 'report_user'@'localhost';
 ```
 
+### Give required permissions
+```sql
+GRANT SELECT, INSERT, UPDATE, DELETE
+ON crm_db.* TO 'crm_user'@'localhost';
+```
+
 ### Reload privileges
 ```sql
 FLUSH PRIVILEGES;
