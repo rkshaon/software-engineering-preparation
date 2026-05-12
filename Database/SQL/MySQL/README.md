@@ -8,3 +8,4 @@ The documentation covers the full setup flow — dependencies, installation, ser
 - [Queries](./queries.md)
 - [Backup & Restore](./backup-and-restore.md)
 - [Remote Access](./remote-access.md)
+- [Logs & Troubleshooting](./logs-and-troubleshooting.md)

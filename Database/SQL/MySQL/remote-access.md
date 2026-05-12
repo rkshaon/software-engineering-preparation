@@ -1,5 +1,16 @@
 # Remote Access
 ## Configuration
+### MySQL Configuration File Locations
+#### Ubuntu/Debian
+```bash
+/etc/mysql/my.cnf
+```
+
+#### CentOS/RHEL
+```bash
+/etc/my.cnf
+```
+
 ### Edit MySQL config
 ```bash
 sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf

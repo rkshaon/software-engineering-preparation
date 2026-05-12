@@ -81,3 +81,20 @@ GRANT SELECT ON company_db.* TO 'report_user'@'localhost';
 ```sql
 FLUSH PRIVILEGES;
 ```
+
+## Example Complete Initial Setup
+```sql
+CREATE DATABASE example_db;
+
+CREATE USER 'example_user'@'localhost'
+IDENTIFIED BY 'StrongPassword123!';
+
+GRANT ALL PRIVILEGES ON example_db.* TO 'example_user'@'localhost';
+
+FLUSH PRIVILEGES;
+```
+
+Now connect using:
+```bash
+mysql -u crm_user -p
+```
