@@ -4,3 +4,4 @@ MySQL is an open-source relational database management system (RDBMS) used to st
 The documentation covers the full setup flow — dependencies, installation, service setup, securing MySQL, creating a database/user, accessing it, and a handy troubleshooting section at the end.
 
 - [Install](./install.md)
+- [User & Database](./user-and-database.md)

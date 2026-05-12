@@ -91,3 +91,17 @@ Start service:
 ```bash
 brew services start mysql
 ```
+
+
+## Login to MySQL
+### Login as root
+```bash
+sudo mysql
+```
+
+or
+
+```bash
+mysql -u root -p
+```
+
