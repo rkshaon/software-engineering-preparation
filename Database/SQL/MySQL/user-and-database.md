@@ -104,3 +104,69 @@ Now connect using:
 ```bash
 mysql -u crm_user -p
 ```
+
+
+## Table
+### See all the tables
+```sql
+SHOW TABLES;
+```
+
+### Search tables by using name
+```sql
+SHOW TABLES LIKE '%searchword%';
+```
+
+or 
+```sql
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'schema_name'
+AND table_name LIKE '%searchword%';
+```
+or
+```sql
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'schema_name'
+AND LOWER(table_name) LIKE '%searchword%';
+```
+for case sensitive search.
+
+### See all columns of the table
+```sql
+DESCRIBE table_name;
+```
+
+or shorter
+```sql
+DESC table_name;
+```
+ or
+ ```sql
+SHOW COLUMNS FROM table_name;
+```
+
+or
+```sql
+SELECT column_name
+FROM information_schema.columns
+WHERE table_schema = 'schema_name'
+AND table_name = 'table_name';
+```
+this will show only column names.
+
+or detail strcuture
+```sql
+SHOW CREATE TABLE table_name;
+```
+Example
+```sql
++------------+--------------+------+-----+---------+----------------+
+| Field      | Type         | Null | Key | Default | Extra          |
++------------+--------------+------+-----+---------+----------------+
+| id         | bigint       | NO   | PRI | NULL    | auto_increment |
+| name       | varchar(255) | YES  |     | NULL    |                |
+| created_at | datetime     | YES  |     | NULL    |                |
++------------+--------------+------+-----+---------+----------------+
+```
