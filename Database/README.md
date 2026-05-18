@@ -9,6 +9,7 @@
         - [Create Database](./SQL/PostgreSQL/create-database/README.md)
         - [Table](./SQL/PostgreSQL/table/README.md)
         - [Basic Queries](./SQL/PostgreSQL/basic_queries/README.md)
+    - [MySQL](./SQL/MySQL/README.md)
     - [Semantics & Gotchas](./SQL/Semantics_&_Gotchas/README.md)
 - [NoSQL](./NoSQL/)
     - [Redis](./NoSQL/Redis/)
