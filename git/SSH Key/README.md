@@ -6,13 +6,13 @@ SSH keys are essential for secure communication between your local machine and t
 - Open the terminal (Git Bash, Command Prompt, or Terminal).
 - Run the following command to generate an SSH key.
 
-```
+```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
 replace `your_email@example.com` with your `actual email address`.
 
-- This will create a pair of files: id_ed25519 (private key) and id_ed25519.pub (public key).
+- This will create a pair of files: `id_ed25519` (private key) and `id_ed25519.pub` (public key).
 
 ## Remove the SSH host key associated with the IP address from local known_hosts file
 ```bash
@@ -24,7 +24,7 @@ Replace `IP_ADDRESS` with your IP Address.
 - By default, SSH keys are stored in the ~/.ssh directory.
 - Check if you already have an SSH key by navigating to that directory:
 
-```
+```bash
 cd ~/.ssh
 ls
 ```
@@ -33,7 +33,7 @@ ls
 
 ## Send Public Key to Git Account
 - Open the `id_ed25519.pub` file (use any text editor) and copy its contents.
-```
+```bash
 /
 ```
 - Go to your GitHub/GitLab/other account settings.
