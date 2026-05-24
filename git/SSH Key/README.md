@@ -14,6 +14,12 @@ replace `your_email@example.com` with your `actual email address`.
 
 - This will create a pair of files: id_ed25519 (private key) and id_ed25519.pub (public key).
 
+## Remove the SSH host key associated with the IP address from local known_hosts file
+```bash
+ssh-keygen -R <IP_ADDRESS>
+```
+Replace `IP_ADDRESS` with your IP Address.
+
 ## Locate Your SSH Key Files
 - By default, SSH keys are stored in the ~/.ssh directory.
 - Check if you already have an SSH key by navigating to that directory:
