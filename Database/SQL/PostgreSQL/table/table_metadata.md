@@ -1,4 +1,27 @@
 # Table Metadata
+## Table Columns
+```sql
+\d request_logs;
+```
+You will see a output like below
+```bash
+                                         Table "public.request_logs"
+      Column      |           Type           | Collation | Nullable |                 Default                  
+------------------+--------------------------+-----------+----------+------------------------------------------
+ id               | integer                  |           | not null | nextval('request_logs_id_seq'::regclass)
+ request_id       | character varying(36)    |           | not null | 
+ service_name     | character varying(50)    |           | not null | 
+ user_id          | uuid                     |           |          | 
+ method           | character varying(10)    |           | not null | 
+ endpoint         | character varying(255)   |           | not null | 
+ status_code      | integer                  |           | not null | 
+ response_time_ms | integer                  |           | not null | 
+ ip_address       | character varying(45)    |           |          | 
+ user_agent       | text                     |           |          | 
+ request_metadata | jsonb                    |           |          | 
+ is_error         | boolean                  |           | not null | false
+```
+
 ## Column-level details (data type, default, nullable, etc.)
 ```sql
 SELECT
