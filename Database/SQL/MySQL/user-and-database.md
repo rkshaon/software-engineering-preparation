@@ -30,6 +30,10 @@ SHOW TABLES;
 ```sql
 DESCRIBE employees;
 ```
+or
+```sql
+DESC employees;
+```
 
 ## User
 ### Existing Users List
